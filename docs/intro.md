@@ -3,46 +3,17 @@ sidebar_position: 1
 slug: /
 ---
 
-# Tutorial Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# Introduction
 
-## Getting Started
+The Qoda protocol is a fixed interest rate lending/borrowing marketplace built on Moonbeam.
 
-Get started by **creating a new site**.
+# Why Fixed Interest Rates?
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Fixed interest rates are the basis of developed interest rates market. In traditional finance, fixed interest rates are overwhelmingly preferred by users over floating interest rates. The reason for this is fixed rates means reduced volatility. Lenders want stable yield, and borrowers want predictable cost of borrow.
 
-### What you'll need
+On top of that, having fixed interest rate deals recorded on-chain introduces the possibility for a new DeFi primitive - the Crypto Yield Curve. The yield curve is a fundamental building block of fixed income on top of which various rich and complex products can be built. If the goal is to promote the growth of a vibrant, mature crypto interest rate market, fixed rates is the place to start.
 
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+# Why Marketplace?
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+# Why Altcoin Loans?

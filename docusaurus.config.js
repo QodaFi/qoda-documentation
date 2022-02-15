@@ -25,14 +25,14 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -63,6 +63,9 @@ const config = {
           //   position: 'right',
           // },
         ],
+      },
+      colorMode: {
+        disableSwitch: true
       },
       footer: {
         style: 'dark',
@@ -99,11 +102,7 @@ const config = {
               {
                 label: 'Blog',
                 to: 'https://blog.qoda.fi',
-              },
-              // {
-              //   label: 'GitHub',
-              //   href: 'https://github.com/facebook/docusaurus',
-              // },
+              }
             ],
           },
         ],
