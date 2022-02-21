@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Qoda Finance',
   tagline: '',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://qoda.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
