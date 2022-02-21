@@ -32,15 +32,15 @@ First, create the raw mesage object:
 
 ```
 var obj = [
-           {'type': 'address', value: '0xABC...'}, // fixedRateMarketAddress
-           {'type': 'address', value: '0xDEF...'}, // quoter
-           {'type': 'uint8', value: 0}, // quoteType
-           {'type': 'uint8', value: 0}, // side
-           {'type': 'uint64', value: 1645464989}, // quoteExpiryTime
-           {'type': 'uint64', value: 1052}, // APR
-           {'type': 'uint256', value: new web3.utils.BN("1000000000000000000")}, // cashflow
-           {'type': 'uint256', value: 1645444993} // nonce
-           ]
+  {'type': 'address', value: '0xABC...'}, // fixedRateMarketAddress
+  {'type': 'address', value: '0xDEF...'}, // quoter
+  {'type': 'uint8', value: 0}, // quoteType
+  {'type': 'uint8', value: 0}, // side
+  {'type': 'uint64', value: 1645464989}, // quoteExpiryTime
+  {'type': 'uint64', value: 1052}, // APR
+  {'type': 'uint256', value: new web3.utils.BN("1000000000000000000")}, // cashflow
+  {'type': 'uint256', value: 1645444993} // nonce
+  ];
 ```
 
 Next create the message hash:
@@ -63,19 +63,20 @@ var signature = web3.eth.accounts.sign(messageHash, privateKey).signature;
 
 After generating the off-chain digital signature, the next step is to publish the Quote fields and signature on-chain as an event so that it can be read by the Qoda app. The Qoda app requires Quotes to be published on-chain for 1) transparency to the public, and 2) to prevent the Qoda marketplace page from being spammed (Strictly speaking, however, a Quote that stays entirely off-chain can be interacted with by a user via a direct smart contract call so long as they enter all the fields and signature properly).
 
-To do this, you can call the `createQuote(...)` function in the Qoda QuotePublisher smart contract.
+To do this, you can call the `createQuote(...)` function in the Qoda `QuotePublisher` smart contract. Click [here](/smart-contract-addresses) for a list of Qoda smart contract addresses.
 
 ```
 QuotePublisher quotePublisher = QuotePublisher(0xDEF...)
+
 await quotePublisher.methods.createQuote(
-                                         fixedRateMarketAddress,
-                                         quoter,
-                                         quoteType,
-                                         side,
-                                         quoteExpiryTime,
-                                         APR,
-                                         cashflow,
-                                         nonce,
-                                         signature
-                                         );
+  fixedRateMarketAddress,
+  quoter,
+  quoteType,
+  side,
+  quoteExpiryTime,
+  APR,
+  cashflow,
+  nonce,
+  signature
+  );
 ```
