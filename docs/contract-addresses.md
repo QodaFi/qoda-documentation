@@ -1,4 +1,4 @@
-# Smart Contract Addresses
+# Contract Addresses
 
 ## Moonbeam
 
