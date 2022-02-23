@@ -80,3 +80,5 @@ await quotePublisher.methods.createQuote(
   signature
   );
 ```
+
+The only purpose of `createQuote(...)` is to emit an `createQuote` Event on-chain to serve as a record of the Quote being listed, and is the source which Qoda uses to populate its list of available Quotes on the web app.
