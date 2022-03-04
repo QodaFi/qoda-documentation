@@ -28,25 +28,25 @@ The basic structure of a Quote looks like this:
 
 When you publish a Quote using the Qoda app, it will ask you to sign the message, generate the digital signature automatically, and publish it for you. However, if you are an API user or prefer to generate the digital signature yourself, here is an example using Javascript and the web3.js library.
 
-First, create the raw mesage object:
+First, create the raw message object:
 
 ```
 var obj = [
-  {'type': 'address', value: '0xABC...'}, // fixedRateMarketAddress
-  {'type': 'address', value: '0xDEF...'}, // quoter
-  {'type': 'uint8', value: 0}, // quoteType
-  {'type': 'uint8', value: 0}, // side
-  {'type': 'uint64', value: 1645464989}, // quoteExpiryTime
-  {'type': 'uint64', value: 1052}, // APR
-  {'type': 'uint256', value: new web3.utils.BN("1000000000000000000")}, // cashflow
-  {'type': 'uint256', value: 1645444993} // nonce
+  {'type': 'address', 'value': '0xABC...'}, // fixedRateMarketAddress
+  {'type': 'address', 'value': '0xDEF...'}, // quoter
+  {'type': 'uint8', 'value': 0}, // quoteType
+  {'type': 'uint8', 'value': 0}, // side
+  {'type': 'uint64', 'value': 1645464989}, // quoteExpiryTime
+  {'type': 'uint64', 'value': 1052}, // APR
+  {'type': 'uint256', 'value': new web3.utils.BN("1000000000000000000")}, // cashflow
+  {'type': 'uint256', 'value': 1645444993} // nonce
   ];
 ```
 
 Next create the message hash:
 
 ```
-var messageHash = web3.utils.soliditySha3(obj);
+var messageHash = web3.utils.soliditySha3(...obj);
 ```
 
 Generate the digital signature:
