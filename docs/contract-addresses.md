@@ -16,7 +16,7 @@
 
 | Contract | Address |
 | -------- | ------- |
-| QuotePublisher | [0xC0118AB90eAA53181597897BC7B4041ACd2efb2b](https://rinkeby.etherscan.io/address/0xC0118AB90eAA53181597897BC7B4041ACd2efb2b) |
-| Qontroller | [0x8b6873C66C8C549fbE443c85Fe1E37581e6B33eE](https://rinkeby.etherscan.io/address/0x8b6873C66C8C549fbE443c85Fe1E37581e6B33eE) |
-| QollateralManager| [0xf98807856f5bfbd36f0ef6c06b3cf91a37e7667a](https://rinkeby.etherscan.io/address/0xf98807856f5bfbd36f0ef6c06b3cf91a37e7667a) |
-| qGLMRMAR22 | [0xacBA1EA4A3f0Ec4a8696278B946aEA2B93f6A4b8](https://rinkeby.etherscan.io/address/0xacBA1EA4A3f0Ec4a8696278B946aEA2B93f6A4b8) |
+| QuotePublisher | [0x8ABbF3f885C763641DdC5DE3EEb6ba597F6F0199](https://rinkeby.etherscan.io/address/0x8ABbF3f885C763641DdC5DE3EEb6ba597F6F0199) |
+| Qontroller | [0x8D872D2B533bcBef7C7f5cA76535025640c55AB8](https://rinkeby.etherscan.io/address/0x8D872D2B533bcBef7C7f5cA76535025640c55AB8) |
+| QollateralManager| [0x5c1E6C0f56144e3a15273A9aFcE215fB653241F9](https://rinkeby.etherscan.io/address/0x5c1E6C0f56144e3a15273A9aFcE215fB653241F9) |
+| qGLMRJUN22 | [0x9EE8D93Af5B323C411a680d8b62e3Ff5f1f32898](https://rinkeby.etherscan.io/address/0x9EE8D93Af5B323C411a680d8b62e3Ff5f1f32898) |
