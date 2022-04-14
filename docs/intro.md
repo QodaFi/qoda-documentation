@@ -16,6 +16,9 @@ On top of that, having fixed interest rate deals recorded on-chain introduces th
 
 # Why Marketplace?
 
-The Marketplace mechanism allows users to set their own terms on their loans by publishing orders, which we call Quotes, specifying terms such as whether they are a borrower or lender, the size of the loan, when it matures, and what is their desired APR. What's more, this can all be done off-chain trustlessly via cryptographic digital signatures so that users don't need to pay any gas when publishing Quotes!
+The Marketplace mechanism allows users to set their own terms on their loans by publishing orders, which we call Quotes, specifying terms such as whether they are a borrower or lender, the size of the loan, when it matures, and what is their desired APR. This can all be done off-chain trustlessly via cryptographic digital signatures so that users don't need to pay any gas when publishing Quotes. Alternatively, users can also browse the list of existing Quotes in the Marketplace, and pick the terms that suit their needs.
 
-Alternatively, users can also browse the list of existing Quotes in the Marketplace, and pick the terms that suit their needs.
+# Altcoin Loans
+
+Because of the increase in efficiency of price discovery and capital allocation with the Marketplace model, Qoda can give a better offering of lending/borrowing in various parachain tokens. This means more opportunity to earn fixed yield or borrow at a fixed cost for your tokens in the Polkadot ecosystem.
+
