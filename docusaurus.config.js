@@ -7,6 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Qoda Finance',
+  staticDirectories: ['static'],
   tagline: '',
   url: 'https://qoda.netlify.app',
   baseUrl: '/',
