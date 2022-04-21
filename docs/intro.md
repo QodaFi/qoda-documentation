@@ -6,7 +6,11 @@ slug: /
 
 # Introduction
 
-The Qoda protocol is a lending/borrowing protocol built on Moonbeam. It has three key features: 1) Fixed interest rate loans (as opposed to variable rate loans), 2) Marketplace model, and 3) focus on parachain token and altcoin denominated loans.
+The Qoda protocol is a lending/borrowing protocol built on Moonbeam. It has three key features:
+
+1. Fixed interest rate, fixed maturity loans
+2. Marketplace model
+3. Focus on parachain token and altcoin denominated loans
 
 # Why Fixed Interest Rates?
 
