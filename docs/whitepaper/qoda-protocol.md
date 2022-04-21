@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: The Qodal Protocol
+title: The Qoda Protocol
 ---
 
 # Qoda Whitepaper
