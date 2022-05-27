@@ -10,13 +10,10 @@
 
 | Contract | Address |
 | -------- | ------- |
-| QuotePublisher | [0xcb293ab3AB5e50b0AE4](https://moonbase.moonscan.io/address/0xcb293ab3AB5e50b0AE49bfA49166475aDF9309E5) |
+| QuotePublisher | [0xe966a3F19527f9Ba719ea832186cA901f0117150](https://moonbase.moonscan.io/address/0xe966a3F19527f9Ba719ea832186cA901f0117150) |
+| QAdmin | [0x5827FfF5F19D1A5C3341f360bA6d6FA0f3b3c801](https://moonbase.moonscan.io/address/0x5827FfF5F19D1A5C3341f360bA6d6FA0f3b3c801) |
+| QPriceOracle | [ 0xcDe78067A71EC2590956811af20dC61375cf5ec3](https://moonbase.moonscan.io/address/0xcDe78067A71EC2590956811af20dC61375cf5ec3) |
+| QollateralManager | [0x4A99eC78c72E9Fb463Efa8C960e708C1632d5e71](https://moonbase.moonscan.io/address/0x4A99eC78c72E9Fb463Efa8C960e708C1632d5e71) |
+| qDEVSEP22 | [0xbb00224d38e4Cf261f30b022FbA4d4c3Ba879E78](https://moonbase.moonscan.io/address/0xbb00224d38e4Cf261f30b022FbA4d4c3Ba879E78) |
 
-## Rinkeby Testnet
 
-| Contract | Address |
-| -------- | ------- |
-| QuotePublisher | [0xe6628F121dE49618C18e0557dA929Cde6eC5EDB4](https://rinkeby.etherscan.io/address/0xe6628F121dE49618C18e0557dA929Cde6eC5EDB4) |
-| Qontroller | [0x8D872D2B533bcBef7C7f5cA76535025640c55AB8](https://rinkeby.etherscan.io/address/0x8D872D2B533bcBef7C7f5cA76535025640c55AB8) |
-| QollateralManager| [0x5c1E6C0f56144e3a15273A9aFcE215fB653241F9](https://rinkeby.etherscan.io/address/0x5c1E6C0f56144e3a15273A9aFcE215fB653241F9) |
-| qGLMRJUN22 | [0x9EE8D93Af5B323C411a680d8b62e3Ff5f1f32898](https://rinkeby.etherscan.io/address/0x9EE8D93Af5B323C411a680d8b62e3Ff5f1f32898) |
