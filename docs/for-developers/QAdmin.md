@@ -43,7 +43,7 @@ struct Asset {
 ## FixedRateMarket
 
 ```
-function fixedRateMarket(address token, uint maturity) external view returns(address)
+function fixedRateMarkets(address token, uint maturity) external view returns(address)
 ```
 
 Returns the address of the `FixedRateMarket`. A `FixedRateMarket` is a self-contained smart contract that handles all borrowing and lending for a particular market. A `FixedRateMarket` is characterized by two fields:
