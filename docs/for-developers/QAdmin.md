@@ -28,7 +28,6 @@ struct Asset {
     address oracleFeed;
     uint collateralFactor;
     uint marketFactor;
-    uint minQuoteSize;
     uint[] maturities;
 }
 ```
@@ -39,7 +38,6 @@ struct Asset {
 * `oracleFeed`: The corresponding Chainlink oracle address for determining the value of the `Asset`.
 * `collateralFactor`: Used for discounting the value of collateral supplied in the ERC20. Value between [0,1], scaled by 1e8.
 * `marketFactor`: Used for applying a premium on the value of borrows of the ERC20. Value between [0,1], scaled by 1e8.
-* `minQuoteSize`: Minimum size of a `Quote`, in present value terms, denominated in the underlying token
 * `maturities`: An iterable array of all the enabled maturities (UNIX timestamp in seconds) for the ERC20. An empty array implies there is no available `FixedRateMarket` for borrowing and lending this ERC20.
 
 ## FixedRateMarket

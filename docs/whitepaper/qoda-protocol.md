@@ -51,8 +51,6 @@ Asset {
                          // collateral provided by a borrower
   uint marketFactor, // Value between 0 - 1, used to apply a premium on the value of
                      // assets borrowed
-  uint minQuoteSize, // Minimum quote size, in PV terms, and denominated in the 
-                     // underlying token
   uint[] maturities // A list of all the enabled maturity dates for this Asset 
 }
 ```
