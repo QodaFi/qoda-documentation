@@ -7,15 +7,16 @@
 
 
 ## Moonbase Alpha Testnet
+[//]: # (Deployed with source https://github.com/QodaFi/qoda-contracts-v1/tree/2022.07.13)
 
 | Contract | Address |
 | -------- | ------- |
-| QuotePublisher | [0x4E2731772BBc0D0cf551eE0b63F3406CE7530104](https://moonbase.moonscan.io/address/0x4E2731772BBc0D0cf551eE0b63F3406CE7530104) |
-| QAdmin | [0x404fb6C37146BbeaE577742590fFd35A248B816E](https://moonbase.moonscan.io/address/0x404fb6C37146BbeaE577742590fFd35A248B816E) |
-| QPriceOracle | [0x4C65816c7Fe82b3d5035560D59CADFeA39651Cb9](https://moonbase.moonscan.io/address/0x4C65816c7Fe82b3d5035560D59CADFeA39651Cb9) |
-| QollateralManager | [0xa1677BCAdd47F0BdC5dCE37141A64021D0349410](https://moonbase.moonscan.io/address/0xa1677BCAdd47F0BdC5dCE37141A64021D0349410) |
-| QodaLens | [0xbB42d795340C0899741fa5d73555DA0278ECf56c](https://moonbase.moonscan.io/address/0xbB42d795340C0899741fa5d73555DA0278ECf56c) |
-| qDEVJUL22 | [0xf560DCd2259f7735f92e11083800FA2e7063eeC4](https://moonbase.moonscan.io/address/0xf560DCd2259f7735f92e11083800FA2e7063eeC4) |
-| qUSDCJUL22 | [0xA8dfcb5EB4D7A79a72B15F8Ea8C0AD77Ea5068f4](https://moonbase.moonscan.io/address/0xA8dfcb5EB4D7A79a72B15F8Ea8C0AD77Ea5068f4) |
+| QuotePublisher | [0x2a1AaD5058503F3B0E650D053e544C0C0e185c79](https://moonbase.moonscan.io/address/0x2a1AaD5058503F3B0E650D053e544C0C0e185c79) |
+| QAdmin | [0xaB19E483344582eBCBf2457DFfD61857B661e6c6](https://moonbase.moonscan.io/address/0xaB19E483344582eBCBf2457DFfD61857B661e6c6) |
+| QPriceOracle | [0x6165943ABa938B04ACC45121BbAa64F1a5b3f8Fe](https://moonbase.moonscan.io/address/0x6165943ABa938B04ACC45121BbAa64F1a5b3f8Fe) |
+| QollateralManager | [0x4e3ac90Aa4A33F034CCe7B0641b28E7a8b9E61DA](https://moonbase.moonscan.io/address/0x4e3ac90Aa4A33F034CCe7B0641b28E7a8b9E61DA) |
+| QodaLens | [0x3483D469047ecf508eC0658c3ccc1089Ea9590c5](https://moonbase.moonscan.io/address/0x3483D469047ecf508eC0658c3ccc1089Ea9590c5) |
+| qDEVJUL22 | [0x07b9a83D29e6DEEFd853Ce5d821040d2d651182c](https://moonbase.moonscan.io/address/0x07b9a83D29e6DEEFd853Ce5d821040d2d651182c) |
+| qUSDCJUL22 | [0xf8907AF047fC549Ae52c2344fC5343DFAdef2BbB](https://moonbase.moonscan.io/address/0xf8907AF047fC549Ae52c2344fC5343DFAdef2BbB) |
 
 
