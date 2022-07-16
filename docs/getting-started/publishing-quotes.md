@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Publishing Quotes
@@ -15,7 +15,7 @@ Qoda uses a *Marketplace* model for lending/borrowing. What is a *Marketplace*?
 
 In short, the Qoda *Marketplace* is like a simplified orderbook exchange for loans, arranged by interest rate (APR) instead of price. Qoda’s *Fixed Rate Loan Marketplace* allows users to place off-chain orders using digital signatures that we call *Quotes* to either lend or borrow a particular token for a user-specified size, APR, and maturity date, along with an order expiration time after which your offer will expire.
 
-Alternatively, users can browse the list of existing Quotes to pick the terms that best suit their needs.
+Alternatively, users can browse the list of existing Quotes to pick the terms that best suit their needs. Note that before a user is able to borrow on Qoda, they must first deposit collateral (see more on [depositing collateral](/getting-started/depositing-collateral)). For users lending on Qoda, no collateral deposit is required.
 
 ## How to Publish a *Quote*
 
