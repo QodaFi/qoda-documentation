@@ -71,23 +71,27 @@ Note that a user may not have an outstanding debt and hold *qTokens* at the same
 
 ## 2.5 Collateral Management
 
-The net borrows of any account must always be overcollateralized at all times to ensure nondefault. Any account in danger of undercollateralization is subject to liquidations as described in section 2.7. The overall collateral health of an account, called *collateralRatio*, depends on two components:
+The net borrows of any account must always be overcollateralized at all times to ensure nondefault. Any account in danger of undercollateralization is subject to liquidations as described in section 2.7. Before an account is allowed to take on a loan, they must fund it with collateral, which can be denominated in any token that is an enabled *Asset* (section 2.3). The overall collateral health of an account, called *collateralRatio*, depends on two components:
 
-1. *virtualCollateralValue* Before an account is allowed to take on a loan, they must fund it with collateral, which can be denominated in any token that is an enabled *Asset* (section 2.3). Its value is expressed in USD terms using Chainlink price feeds, calculated as:
+1. *virtualCollateralValue* The sum of all the collateral deposited by an account across all *Assets*. Its value is expressed in USD terms using Chainlink price feeds, calculated as:
+
 
 <center>
-  <img src="/img/whitepaper/qoda-protocol/eq1.png"></img>
+  <img src="/img/whitepaper/qoda-protocol/eq1_alt.png"></img>
 </center>
+
 
 where *collateralFactor* is a parametrized value from 0.0 to 1.0 based on the *Asset* and is used to discount the value of the collateral. The value will be higher for safer Assets, and lower for riskier Assets. Note this means that the *virtualCollateralValue* of an account will always be lower than the actual market value (or *realCollateralValue*) of the underlying tokens. Hence, the *collateralFactor* parameter ensures that account borrows will always be overcollateralized.
 
-2. *virtualBorrowValue* The sum of all the borrows of an account across all Markets. This is calculated as:
+2. *virtualBorrowValue* The sum of all the net borrows of an account across all Markets. This is calculated as:
+
 
 <center>
-  <img src="/img/whitepaper/qoda-protocol/eq2.png"></img>
+  <img src="/img/whitepaper/qoda-protocol/eq2_alt.png"></img>
 </center>
 
-Note that the *borrowAmount* refers to the full principal plus interest amount (i.e. Future Value, FV), not just the principal amount upon inception of the loan (i.e. Present Value, PV). The amount of *qTokens* for a particular *Market* also act as a credit to the user for that *Market*. The feature of netting off borrows with *qTokens* makes borrows and lends fungible for each *Market*, which give users the flexibility to trade in and out of positions.
+
+The amount a user has borrowed and lent in a single *Market* are allowed to be netted against one another, up to the size of *lendAmt*. This mechanism allows users to exit out of borrow/lend positions early, rather than having to hold onto it until maturity. This also means if a user has lent into a *Market*, they can also borrow up to the same amount without having to put up any extra collateral, as long as they are borrowing within the same *Market*. In practice, the *lendAmt* in a particular *Market* is by a user is indicated by the amount of *qTokens* corresponding to the *Market* that the account owns. Note that the *borrowAmt* and *lendAmt* refers to the full principal plus interest amounts (i.e. Future Value, FV), not just the principal amount upon inception of the loan (i.e. Present Value, PV).
 
 Similar to the *collateralFactor*, the *marketFactor* is a parametrized value from 0.0 to 1.0 based on the Asset, which is used to give a premium on value of the user’s loans. The value will be higher for safer *Markets*, and lower for more volatile *Markets*. Therefore, the *virtualCollateralValue* of an account will always be valued at a premium compared to the actual market value (or *realBorrowValue*) of its underlying token. This again ensures that account borrows will always be overcollateralized.
 
