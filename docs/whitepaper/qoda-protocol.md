@@ -71,7 +71,7 @@ Note that a user may not have an outstanding debt and hold *qTokens* at the same
 
 ## 2.5 Collateral Management
 
-The net borrows of any account must always be overcollateralized at all times to ensure nondefault. Any account in danger of undercollateralization is subject to liquidations as described in section 2.7. Before an account is allowed to take on a loan, they must fund it with collateral, which can be denominated in any token that is an enabled *Asset* (section 2.3). The overall collateral health of an account, called *collateralRatio*, depends on two components:
+The net borrows of any account must always be overcollateralized at all times to ensure nondefault. Any account in danger of undercollateralization is subject to liquidations as described in section 2.7. Before an account is allowed to take on a loan, they must fund it with collateral, which can be denominated in any token that is an enabled *Asset* (section 2.3). The overall collateral *Account Health* of an account depends on two components:
 
 1. *virtualCollateralValue* The sum of all the collateral deposited by an account across all *Assets*. Its value is expressed in USD terms using Chainlink price feeds, calculated as:
 
@@ -95,7 +95,15 @@ The amount a user has borrowed and lent in a single *Market* are allowed to be n
 
 Similar to the *collateralFactor*, the *marketFactor* is a parametrized value from 0.0 to 1.0 based on the Asset, which is used to give a premium on value of the user’s loans. The value will be higher for safer *Markets*, and lower for more volatile *Markets*. Therefore, the *virtualCollateralValue* of an account will always be valued at a premium compared to the actual market value (or *realBorrowValue*) of its underlying token. This again ensures that account borrows will always be overcollateralized.
 
-The account is considered properly collateralized as long as the ratio of *virtualCollateralValue* / *virtualBorrowValue* remains above 1. If an account falls below this, it will be subject to liquidation.
+Finally, the *accountHealth* of an account is calculated as:
+
+
+<center>
+  <img src="/img/whitepaper/qoda-protocol/eq3.png"></img>
+</center>
+
+
+The account is considered properly collateralized as long as the *accountHealth* ratio remains above 1. WARNING: If any account falls below this ratio, it will be subject to liquidation.
 
 ## 2.6 Settlement of Loans
 
