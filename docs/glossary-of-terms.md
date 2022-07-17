@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Account Health
 
-The *Account Health* is a measure of how close your account is to being liquidated. An *Account Health* below 1.0 may be liquidated at any time. The *Account Health* is a ratio of the account's *Collateral Factor*-adjusted collateral value (in USD) divided by the *Market Factor*-adjusted net borrow value (in USD). Click [here](http://localhost:3002/whitepaper/qoda-protocol#25-collateral-management) for a deeper, more technical explanation on *Account Health*. 
+The *Account Health* is a measure of how close your account is to being liquidated. An *Account Health* below 1.0 may be liquidated at any time. The *Account Health* is a ratio of the account's *Collateral Factor*-adjusted collateral value (in USD) divided by the *Market Factor*-adjusted net borrow value (in USD). Click [here](/whitepaper/qoda-protocol#25-collateral-management) for a deeper, more technical explanation on *Account Health*. 
 
 ## Collateral Factor
 
