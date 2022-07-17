@@ -21,7 +21,7 @@ A *Market* is the place where users can borrow or lend. A *Market* is made up of
 1. *Underlying ERC20 Token*, which is the token which is being borrowed or lent.
 2. *Maturity*, which is when borrowers must repay their loans, and when lenders may redeem their *qTokens* for the underlying token.
 
-For example, the USDCJUL22 *Market* is a *Market* to borrow or lend USDC tokens, maturing on 29th July 2022, 4:00 PM UTC.
+For example, the USDCJUL22 *Market* is where users may borrow or lend USDC tokens, maturing on 29th July 2022, 4:00 PM UTC.
 
 ## Market Factor
 
