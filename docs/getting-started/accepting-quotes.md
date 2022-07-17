@@ -41,3 +41,5 @@ Once you've reviewed the details of the loan, you may choose to accept the *Quot
 You will only need to fill out one of *Notional Amount* or *Repayment Amount*. The app will calculate the other for you automatically.
 
 Once you are satisfied with the details, you can proceed to accept the *Quote* to execute the loan. Note that if you are lending for the first time, you may need to approve the smart contract first. If you are borrowing, you will have to [deposit collateral](/getting-started/depositing-collateral) first.
+
+After you have accepted the *Quote*, you will generate a position which you can inspect and manage in the "Portfolio" page.
