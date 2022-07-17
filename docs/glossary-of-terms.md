@@ -45,5 +45,5 @@ Note that a user may not have an outstanding debt and hold *qTokens* at the same
 
 ## Quote
 
-*Quotes* are Qoda's off-chain orders using digital signatures to either lend or borrow a particular token for a user-specified size, APR, and maturity date.
+*Quotes* are Qoda's off-chain orders using digital signatures to either lend or borrow a particular token for a user-specified size, APR, and maturity date. You can think of *Quotes* as an analogue to limit orders in an orderbook. Users can either publish *Quotes* into the platform and wait for others to execute against it, or they can browse the list of existing *Quotes* and pick the terms that suit their needs.
 
