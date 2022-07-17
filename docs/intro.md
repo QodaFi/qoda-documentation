@@ -6,7 +6,7 @@ slug: /
 
 # Introduction
 
-<p style={{ color: "red" }}>*****NOTE: The documentation page is currently still under development. Please check back frequently for more updates.*****</p>
+<p style={{ color: "red" }}>*****NOTE: The documentation page is under constant development. Please check back frequently for updates.*****</p>
 
 The Qoda protocol is a lending/borrowing protocol built on Moonbeam. It has three key features:
 
