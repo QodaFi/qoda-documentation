@@ -8,11 +8,27 @@ sidebar_position: 4
 
 The *Account Health* is a measure of how close your account is to being liquidated. An *Account Health* below 1.0 may be liquidated at any time. The *Account Health* is a ratio of the account's *Collateral Factor*-adjusted collateral value (in USD) divided by the *Market Factor*-adjusted net borrow value (in USD). Click [here](/whitepaper/qoda-protocol#25-collateral-management) for a deeper, more technical explanation on *Account Health*. 
 
+## Borrow Value
+
+The *Borrow Value* is the aggregated value of all borrows across all *Markets* of an account in USD as determined by the latest Chainlink oracle price.
+
 ## Collateral Factor
 
 The *Collateral Factor* is a number from 0-100% assigned to every *Asset* that represents a weighting of how much lesser the Qoda collateral system will value collateral posted in that *Asset* from its current market price due, to the perceived market risk of the collateral.
 
 Generally, large, liquid, safer *Assets* have high *Collateral Factors*, while small, illiquid, riskier *Assets* have low *Collateral Factors*. If an Asset has a 0% *Collateral Factor*, it can’t be used as collateral, though it can still be lent or borrowed in Qoda *Markets*.
+
+## Collateral Value (Real Collateral Value)
+
+The *Collateral Value* (or *Real Collateral Value*) is the aggregated value of all collateral an account has deposited in USD as determined by the latest Chainlink oracle price.
+
+## Collateral Factor-adjusted Collateral Value (Virtual Collateral Value)
+
+The *Collateral Factor-adjusted Collateral Value* (or *Virtual Collateral Value*) is the aggregated value of all collateral an account has deposited in USD, each adjusted by its corresponding *Collateral Factor*, as determined by the latest Chainlink oracle price. Note that the *Collateral Factor-adjusted Collateral Value* is always less than or equal to the *Real Collateral Value*.
+
+## Lend Value
+
+The *Lend Value* is the aggregated value of all lends across all *Markets* of an account in USD as determined by the latest Chainlink oracle price.
 
 ## Market
 
@@ -46,4 +62,3 @@ Note that a user may not have an outstanding debt and hold *qTokens* at the same
 ## Quote
 
 *Quotes* are Qoda's off-chain orders using digital signatures to either lend or borrow a particular token for a user-specified size, APR, and maturity date. You can think of *Quotes* as an analogue to limit orders in an orderbook. Users can either publish *Quotes* into the platform and wait for others to execute against it, or they can browse the list of existing *Quotes* and pick the terms that suit their needs.
-
