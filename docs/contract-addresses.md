@@ -13,14 +13,14 @@ sidebar_position: 5
 ## Moonbase Alpha Testnet
 | Contract | Address |
 | -------- | ------- |
-| QuotePublisher | [0x2a1AaD5058503F3B0E650D053e544C0C0e185c79](https://moonbase.moonscan.io/address/0x2a1AaD5058503F3B0E650D053e544C0C0e185c79) |
-| QAdmin | [0xaB19E483344582eBCBf2457DFfD61857B661e6c6](https://moonbase.moonscan.io/address/0xaB19E483344582eBCBf2457DFfD61857B661e6c6) |
-| QPriceOracle | [0x6165943ABa938B04ACC45121BbAa64F1a5b3f8Fe](https://moonbase.moonscan.io/address/0x6165943ABa938B04ACC45121BbAa64F1a5b3f8Fe) |
-| QollateralManager | [0x4e3ac90Aa4A33F034CCe7B0641b28E7a8b9E61DA](https://moonbase.moonscan.io/address/0x4e3ac90Aa4A33F034CCe7B0641b28E7a8b9E61DA) |
-| QodaLens | [0x3483D469047ecf508eC0658c3ccc1089Ea9590c5](https://moonbase.moonscan.io/address/0x3483D469047ecf508eC0658c3ccc1089Ea9590c5) |
-| qDEVJUL22 | [0x07b9a83D29e6DEEFd853Ce5d821040d2d651182c](https://moonbase.moonscan.io/address/0x07b9a83D29e6DEEFd853Ce5d821040d2d651182c) |
-| qUSDCJUL22 | [0xf8907AF047fC549Ae52c2344fC5343DFAdef2BbB](https://moonbase.moonscan.io/address/0xf8907AF047fC549Ae52c2344fC5343DFAdef2BbB) |
-| qBTCJUL22 | [0x8F9Fa3795523EFc3FA32F0677f34FcE34c70ca3E](https://moonbase.moonscan.io/address/0x8F9Fa3795523EFc3FA32F0677f34FcE34c70ca3E) |
-| qDEVAUG22 | [0x9a2d3881Ef2d7AD96a47961fB3E4b657B63eB27C](https://moonbase.moonscan.io/address/0x9a2d3881Ef2d7AD96a47961fB3E4b657B63eB27C) |
-| qUSDCAUG22 | [0x1488643a62fb71d9BB93d2950F3E12bbba81CB2f](https://moonbase.moonscan.io/address/0x1488643a62fb71d9BB93d2950F3E12bbba81CB2f) |
-| qBTCAUG22 | [0xEE26D7d27B34F90BFBF2a2903c2395B82DB41880](https://moonbase.moonscan.io/address/0xEE26D7d27B34F90BFBF2a2903c2395B82DB41880) |
+| QuotePublisher | [0x914f2a40Bf47354d14e388848f42c20909533DFd](https://moonbase.moonscan.io/address/0x914f2a40Bf47354d14e388848f42c20909533DFd) |
+| QAdmin | [0xeb16508Ee460105FA88EdE9a6b277669Bb868595](https://moonbase.moonscan.io/address/0xeb16508Ee460105FA88EdE9a6b277669Bb868595) |
+| QPriceOracle | [0xeB59D3F7C6Afda53fBBBd72bB19E4839b1a917ec](https://moonbase.moonscan.io/address/0xeB59D3F7C6Afda53fBBBd72bB19E4839b1a917ec) |
+| QollateralManager | [0x87CF8E51f8Bbb283e35483A48C1CAe61eB6f6948](https://moonbase.moonscan.io/address/0x87CF8E51f8Bbb283e35483A48C1CAe61eB6f6948) |
+| QodaLens | [0xBd0E4dB286669f658E45100f60df9BfB9a4F3140](https://moonbase.moonscan.io/address/0xBd0E4dB286669f658E45100f60df9BfB9a4F3140) |
+| qDEVJUL22 | [0x278694DFb7dd04b9D688280c7927251eCa9f010f](https://moonbase.moonscan.io/address/0x278694DFb7dd04b9D688280c7927251eCa9f010f) |
+| qUSDCJUL22 | [0x8ad771a49b1baA4F6c63Cd23A3Bab3d5a6fdd468](https://moonbase.moonscan.io/address/0x8ad771a49b1baA4F6c63Cd23A3Bab3d5a6fdd468) |
+| qBTCJUL22 | [0x7Cc86FAF916589Fb2573D4aAad7AcC651E79621e](https://moonbase.moonscan.io/address/0x7Cc86FAF916589Fb2573D4aAad7AcC651E79621e) |
+| qDEVAUG22 | [0x683635432472748725471E79a890d7753fF19732](https://moonbase.moonscan.io/address/0x683635432472748725471E79a890d7753fF19732) |
+| qUSDCAUG22 | [0xEc558F7E268D3B9CAbb139281C42F25806c68E48](https://moonbase.moonscan.io/address/0xEc558F7E268D3B9CAbb139281C42F25806c68E48) |
+| qBTCAUG22 | [0x8c0cbd7CeB281aC5977e58d0B2Cedb9A77df6AE8](https://moonbase.moonscan.io/address/0x8c0cbd7CeB281aC5977e58d0B2Cedb9A77df6AE8) |
