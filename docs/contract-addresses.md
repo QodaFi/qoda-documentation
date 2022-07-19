@@ -17,7 +17,7 @@ sidebar_position: 5
 | QAdmin | [0xeb16508Ee460105FA88EdE9a6b277669Bb868595](https://moonbase.moonscan.io/address/0xeb16508Ee460105FA88EdE9a6b277669Bb868595) |
 | QPriceOracle | [0xeB59D3F7C6Afda53fBBBd72bB19E4839b1a917ec](https://moonbase.moonscan.io/address/0xeB59D3F7C6Afda53fBBBd72bB19E4839b1a917ec) |
 | QollateralManager | [0x87CF8E51f8Bbb283e35483A48C1CAe61eB6f6948](https://moonbase.moonscan.io/address/0x87CF8E51f8Bbb283e35483A48C1CAe61eB6f6948) |
-| QodaLens | [0xBd0E4dB286669f658E45100f60df9BfB9a4F3140](https://moonbase.moonscan.io/address/0xBd0E4dB286669f658E45100f60df9BfB9a4F3140) |
+| QodaLens | [0x6C51D33d88a3aEF69cbc217Ca7fd4F526d595635](https://moonbase.moonscan.io/address/0x6C51D33d88a3aEF69cbc217Ca7fd4F526d595635) |
 | qDEVJUL22 | [0x278694DFb7dd04b9D688280c7927251eCa9f010f](https://moonbase.moonscan.io/address/0x278694DFb7dd04b9D688280c7927251eCa9f010f) |
 | qUSDCJUL22 | [0x8ad771a49b1baA4F6c63Cd23A3Bab3d5a6fdd468](https://moonbase.moonscan.io/address/0x8ad771a49b1baA4F6c63Cd23A3Bab3d5a6fdd468) |
 | qBTCJUL22 | [0x7Cc86FAF916589Fb2573D4aAad7AcC651E79621e](https://moonbase.moonscan.io/address/0x7Cc86FAF916589Fb2573D4aAad7AcC651E79621e) |
