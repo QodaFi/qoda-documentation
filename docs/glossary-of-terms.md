@@ -22,10 +22,6 @@ Generally, large, liquid, safer *Assets* have high *Collateral Factors*, while s
 
 The *Collateral Value* (or *Real Collateral Value*) is the aggregated value of all collateral an account has deposited in USD as determined by the latest Chainlink oracle price.
 
-## Collateral Factor-adjusted Collateral Value (Virtual Collateral Value)
-
-The *Collateral Factor-adjusted Collateral Value* (or *Virtual Collateral Value*) is the aggregated value of all collateral an account has deposited in USD, each adjusted by its corresponding *Collateral Factor*, as determined by the latest Chainlink oracle price. Note that the *Collateral Factor-adjusted Collateral Value* is always less than or equal to the *Real Collateral Value*.
-
 ## Lend Value
 
 The *Lend Value* is the aggregated value of all lends across all *Markets* of an account in USD as determined by the latest Chainlink oracle price.
@@ -62,3 +58,13 @@ Note that a user may not have an outstanding debt and hold *qTokens* at the same
 ## Quote
 
 *Quotes* are Qoda's off-chain orders using digital signatures to either lend or borrow a particular token for a user-specified size, APR, and maturity date. You can think of *Quotes* as an analogue to limit orders in an orderbook. Users can either publish *Quotes* into the platform and wait for others to execute against it, or they can browse the list of existing *Quotes* and pick the terms that suit their needs.
+
+## Virtual Borrow Value
+
+The *Virtual Borrow Value* is the *Market Factor-*adjusted aggregated value in USD (as determined by the current Chainlink oracle price) of all net borrows (i.e. borrows minus lends) across all markets, where each borrowed *Market* is adjusted by its corresponding *Market Factor*. Important to note is that for any particular *Market*, a net positive lend position does not reduce the aggregate *Virtual Borrow Value* - that is, lending in a *Market* is not equivalent to depositing collateral. Lending in a *Market* cannot substitute as collateral, it can only net against a positive borrow position in that particular *Market*.
+
+Note that the *Virtual Borrow Value* is always greater than or equal to the *Real Borrow Value*.
+
+## Virtual Collateral Value
+
+The *Virtual Collateral Value* is the *Collateral Factor-*adjusted aggregated value in USD (as determined by the current Chainlink oracle price) of all collateral an account has deposited, where each collateral *Asset* is adjusted by its corresponding *Collateral Factor*. Note that the *Virtual Collateral Value* is always less than or equal to the *Real Collateral Value*.
