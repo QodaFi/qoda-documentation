@@ -10,7 +10,7 @@ The *Account Health* is a measure of how close your account is to being liquidat
 
 ## APR
 
-The Annual Percentage Rate, which is the simple interest rate paid from the borrower to the lender normalized over one year. This lets lenders/borrowers easily compare the interest rate of one loan versus another even if they might have different *Maturity* times.
+The Annual Percentage Rate is the simple interest rate paid from the borrower to the lender normalized over one year. This lets lenders/borrowers easily compare the interest rate of one loan versus another even if they might have different *Maturity* times.
 
 Example: Suppose the APR is 10%, and that the lender lends 100 USDC to the borrower. 
 
@@ -46,6 +46,8 @@ A *Market* is the place where users can borrow or lend. A *Market* is made up of
 2. *Maturity*, which is when borrowers must repay their loans, and when lenders may redeem their *qTokens* for the underlying token.
 
 The naming convention of *Market*s is [TOKEN SYMBOL][MONTH][YEAR]. For example, the USDCJUL22 *Market* is where users may borrow or lend USDC tokens, maturing on 29th July 2022, 4:00 PM UTC.
+
+Important to note: When a borrower repays their loan, they are repaying to the *Market* smart contract. And when a lender is redeeming their repayments, they are receiving it from the *Market* smart contract. This is a subtle point which differentiates Qoda from a direct peer-to-peer model, and allows for greater capital efficiency! This allows borrowing and lending to be interpreted as inverses of each other. If you lent from a *Market*, you can effectively close your loan early by borrowing the same amount (or vice versa, if you were originally borrowing), rather than having to wait the full term for the loan to mature.
 
 ## Market Factor
 
