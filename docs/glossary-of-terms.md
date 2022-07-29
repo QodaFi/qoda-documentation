@@ -8,6 +8,14 @@ sidebar_position: 4
 
 The *Account Health* is a measure of how close your account is to being liquidated. An *Account Health* below 1.0 may be liquidated at any time. The *Account Health* is a ratio of the account's *Collateral Factor*-adjusted collateral value (in USD) divided by the *Market Factor*-adjusted net borrow value (in USD). Click [here](/whitepaper/qoda-protocol#25-collateral-management) for a deeper, more technical explanation on *Account Health*. 
 
+## APR
+
+The Annual Percentage Rate, which is the simple interest rate paid from the borrower to the lender normalized over one year. This lets lenders/borrowers easily compare the interest rate of one loan versus another even if they might have different *Maturity* times.
+
+Example: Suppose the APR is 10%, and that the lender lends 100 USDC to the borrower. After 180 days, the lender will accrue 100 * (10% * 180 / 365) = 4.93 USDC of interest. After 365 days, the lender will accrue 100 * (10% * 365 / 365) = 10 USDC of interest.
+
+Learn more about [APR](https://en.wikipedia.org/wiki/Annual_percentage_rate).
+
 ## Borrow Value
 
 The *Borrow Value* is the aggregated value of all borrows across all *Markets* of an account in USD as determined by the latest Chainlink oracle price.

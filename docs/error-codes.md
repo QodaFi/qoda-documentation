@@ -18,7 +18,7 @@ sidebar_position: 6
 |QPO1| QPriceOracle: currentExchangeRate out of bounds |
 |QM0| QollateralManager: Only admin authorized |
 |QM1| QollateralManager: Only market role authorized |
-|QM2| QollateralManager: Not enough collateral balance |
+|QM2| QollateralManager: Borrower not enough collateral balance |
 |QM3| QollateralManager: Withdraw amount must be less than collateral balance |
 |QM4| QollateralManager: MToken wrapping not supported for this asset |
 |QM5| QollateralManager: Withdraw amount must be positive |
@@ -32,7 +32,7 @@ sidebar_position: 6
 |FRM4| FixedRateMarket: May not redeem early |
 |FRM5| FixedRateMarket: Target user is not eligible for liquidation |
 |FRM6| FixedRateMarket: Liquidation amount must be positive |
-|FRM7| FixedRateMarket: Target user balance is too low |
+|FRM7| FixedRateMarket: Target user collateral balance is too low |
 |FRM8| FixedRateMarket: Invalid signature |
 |FRM9| FixedRateMarket: Quote expired |
 |FRM10| FixedRateMarket: Invalid quote - Quote size too small |
