@@ -12,7 +12,11 @@ The *Account Health* is a measure of how close your account is to being liquidat
 
 The Annual Percentage Rate, which is the simple interest rate paid from the borrower to the lender normalized over one year. This lets lenders/borrowers easily compare the interest rate of one loan versus another even if they might have different *Maturity* times.
 
-Example: Suppose the APR is 10%, and that the lender lends 100 USDC to the borrower. After 180 days, the lender will accrue 100 \* (10% \* 180 / 365) = 4.93 USDC of interest. After 365 days, the lender will accrue 100 \* (10% \* 365 / 365) = 10 USDC of interest.
+Example: Suppose the APR is 10%, and that the lender lends 100 USDC to the borrower. 
+
+- After 30 days, the lender will accrue 100 \* (10% \* 30 / 365) = 0.82 USDC of interest.
+- After 180 days, the lender will accrue 100 \* (10% \* 180 / 365) = 4.93 USDC of interest. 
+- After 365 days, the lender will accrue 100 \* (10% \* 365 / 365) = 10 USDC of interest.
 
 Learn more about [APR](https://en.wikipedia.org/wiki/Annual_percentage_rate).
 
