@@ -17,27 +17,25 @@ The Qoda roadmap is a checklist of protocol development and ecosystem building r
 
 # 2022 Q2
 
-* Qoda Protocol Launch on Moonbase Alpha Testnet ✅
 * Qoda Ambassadors Program Launch ✅
+* Qoda Protocol Launch on Moonbase Alpha Testnet ✅
+* Invitation-Only Alpha Test on Qoda Moonbase Alpha ✅
+
 
 # 2022 Q3
 
-* Invitation-Only Alpha Test on Qoda Moonbase Alpha ✅
-* Integrate Moonwell functionality into Qoda Moonbase Alpha Testnet ✅
-
-# 2022 Q4
-
 * Finalize Qodanomics Module 🛠️
+* Integrate Moonwell functionality into Qoda Moonbase Alpha Testnet ✅
 * Integrate tokenomics/liquidity incentives into Qoda Moonbase Alpha Testnet v2 release 🛠️
 * Open Beta test on Qoda Moonbase Alpha 🛠️
 
-# 2023 Q1
-
+# 2022 Q4
 * Launch Staking Rewards Page 🛠️
 * Qoda Protocol Launch on Moonriver 🛠️
 * Fair Launch, token distribution, liquidity incentive programs on Moonriver 🛠️
 
-# 2023 Q2
-
+# 2023 Q1
 * Qoda Public token sale on Moonbeam 🛠️
+
+# 2023 Q2
 * Qoda Protocol Launch on Moonbeam 🛠️
