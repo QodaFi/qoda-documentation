@@ -8,7 +8,7 @@ The Qoda roadmap is a checklist of protocol development and ecosystem building r
 
 ---
 
-# 2021 Q1
+# 2022 Q1
 
 * Project Qoda Inception ✅
 * Published Whitepaper ✅
