@@ -24,3 +24,11 @@ sidebar_position: 6
 | qUSDCAUG22 | [0x7e64F012FF495FB83d8f33De0A94f733d77ad2BE](https://moonbase.moonscan.io/address/0x7e64F012FF495FB83d8f33De0A94f733d77ad2BE) |
 | qBTCAUG22 | [0x7f96171e560853FB6B8859B0220AC8fd2c5f91af](https://moonbase.moonscan.io/address/0x7f96171e560853FB6B8859B0220AC8fd2c5f91af) |
 
+## Moonbase Alpha Testnet External Contracts
+| Contract | Address |
+|---|---|
+| USDC | [0x3799D95Ee109129951c6b31535b2B5AA6dbF108c](https://moonbase.moonscan.io/address/0x3799D95Ee109129951c6b31535b2B5AA6dbF108c) |
+| BTC | [0x0A996B2f808EF4Cd59a3790c6Bb8bf6E4105e0aA](https://moonbase.moonscan.io/address/0x0A996B2f808EF4Cd59a3790c6Bb8bf6E4105e0aA) |
+| mDEV | [0x827Bb1E617B862d4BC81a6a7995a34dF6EE78a63](https://moonbase.moonscan.io/address/0x827Bb1E617B862d4BC81a6a7995a34dF6EE78a63) |
+| mUSDC | [0x18f324E21846F1C21F4fbF8228705B17897eF15A](https://moonbase.moonscan.io/address/0x18f324E21846F1C21F4fbF8228705B17897eF15A) |
+| mBTC | [0x4b088a4b3250684c362911078a0e945acc21e236](https://moonbase.moonscan.io/address/0x4b088a4b3250684c362911078a0e945acc21e236) |
