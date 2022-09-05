@@ -9,7 +9,7 @@ const config = {
   title: 'Qoda Finance',
   staticDirectories: ['static'],
   tagline: '',
-  url: 'https://qoda.netlify.app',
+  url: 'https://docs.qoda.fi',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

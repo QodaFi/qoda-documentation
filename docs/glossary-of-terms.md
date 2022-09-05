@@ -59,6 +59,12 @@ Generally, large, liquid, safer *Markets* have high *Market Factors*, while smal
 
 The *Maturity* time is the time after which a *Market* closes. No *Quotes* may be published or accepted after the *Maturity* time. This is also the time when borrowers need to repay their loans. By convention, the *Maturity* time is set to be the last business day of the month at 4:00 PM UTC.
 
+## mToken Wrapping / Unwrapping
+
+Users must deposit collateral on Qoda before they can borrow. However, letting users' collateral simply sit inside the Qoda vault doing nothing is capital inefficient. Hence, Qoda gives users the option to allow their collateral to be deposited into [Moonwell.fi](https://moonwell.fi/)'s money markets to earn interest for them. Qoda will automatically handle the conversion of user collateral into Moonwell's equivalent interest-bearing tokens, as well as automatically handle converting the interest-bearing tokens back to the underlying collateral plus the interest you've accrued when you request for withdrawal.
+
+NOTE: Using external contracts such as Moonwell includes smart contract risk that is outside of the control of the Qoda Protocol. Please make sure you understand all the risks associated with using Moonwell's money markets. Users can always opt out of wrapping their collateral in money markets if they do not wish to do so.
+
 ## qToken
 
 Each *Market* has an associated *qToken*, which is minted to a user when they lend to the *Market*. *qTokens* represent the full principal plus interest amount that the user may redeem when the *Market* matures. For example: 
