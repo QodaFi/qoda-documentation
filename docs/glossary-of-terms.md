@@ -79,6 +79,14 @@ Note that a user may not have an outstanding debt and hold *qTokens* at the same
 
 *Quotes* are Qoda's off-chain orders using digital signatures to either lend or borrow a particular token for a user-specified size, APR, and maturity date. You can think of *Quotes* as an analogue to limit orders in an orderbook. Users can either publish *Quotes* into the platform and wait for others to execute against it, or they can browse the list of existing *Quotes* and pick the terms that suit their needs.
 
+## Repayment Ratio Redemption (RRR)
+
+Qoda adopts a hybrid overcollateralized/undercollateralized loan system. Because a portion of borrowers are undercollateralized, in catastrophic situations there is the possibility of borrower nonpayment. How will redemptions for lenders work in the case of bad debt? In traditional finance, this situation typically triggers a bank run, where lenders all try to redeem at the same time. The first few lucky lenders to redeem can receive 100% of funds, while the late redeemers receive 0%.
+
+Qoda implements a *Repayment Ratio Redemption* (RRR) system. The repayment ratio, which is the real-time ratio of total amount that borrowers have repaid divided by the total amount that lenders are owed, is displayed transparently by the protocol at all times. In the event of a borrower default, losses are socialized among lenders to ensure fairness to all users.
+
+Example: The USDCSEP22 market has just expired. Lenders have lent 1,000,000 USDC in total, while borrowers have only repaid 600,000 USDC. The *Repayment Ratio* is 60%, so all lenders can redeem only 50% of their qUSDCSEP22 qTokens. If a lender has 100 qUSDCSEP22 qTokens, they will only be able to redeem for 60 USDC. The remaining 40 qUSDCSEP22 qTokens will still remain in their wallet. In the event that borrowers are later able to make payment, they will be able to redeem the remaining 40 qUSDCSEP22 for the underlying USDC.
+
 ## Virtual Borrow Value
 
 The *Virtual Borrow Value* is the *Market Factor-*adjusted aggregated value in USD (as determined by the current Chainlink oracle price) of all net borrows (i.e. borrows minus lends) across all markets, where each borrowed *Market* is adjusted by its corresponding *Market Factor*. Important to note is that for any particular *Market*, a net positive lend position does not reduce the aggregate *Virtual Borrow Value* - that is, lending in a *Market* is not equivalent to depositing collateral. Lending in a *Market* cannot substitute as collateral, it can only net against a positive borrow position in that particular *Market*.
