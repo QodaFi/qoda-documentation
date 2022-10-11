@@ -26,27 +26,24 @@ sidebar_position: 4
 |QM7| QollateralManager: Asset is not supported as collateral |
 |QM8| QollateralManager: Not enough collateral |
 |FRM0| FixedRateMarket: Market expired |
-|FRM1| FixedRateMarket: Repayment amount must be greater than zero |
+|FRM1| FixedRateMarket: Amount must be greater than zero |
 |FRM2| FixedRateMarket: Not enough allowance |
 |FRM3| FixedRateMarket: Not enough balance |
 |FRM4| FixedRateMarket: May not redeem early |
 |FRM5| FixedRateMarket: Target user is not eligible for liquidation |
-|FRM6| FixedRateMarket: Liquidation amount must be positive |
+|FRM6| FixedRateMarket: Quote ID was not found |
 |FRM7| FixedRateMarket: Target user collateral balance is too low |
-|FRM8| FixedRateMarket: Invalid signature |
-|FRM9| FixedRateMarket: Quote expired |
+|FRM8| FixedRateMarket: Lends must be greater than borrows |
+|FRM9| FixedRateMarket: Amount must be greater than protocol Fee |
 |FRM10| FixedRateMarket: Invalid quote - Quote size too small |
-|FRM11| FixedRateMarket: Invalid nonce |
-|FRM12| FixedRateMarket: Requested size exceeds Quote remaining amount |
-|FRM13| FixedRateMarket: Invalid quote type |
-|FRM14| FixedRateMarket: Invalid quote side |
-|FRM15| FixedRateMarket: Loan amount must be positive |
-|FRM16| FixedRateMarket: Invalid APR |
-|FRM17| FixedRateMarket: Invalid counterparty |
+|FRM11| FixedRateMarket: Invalid quote - Crossed APR |
+|FRM12| FixedRateMarket: User not authorized for this action |
+|FRM13| FixedRateMarket: Invalid quote - invalid quoteType |
+|FRM14| FixedRateMarket: Invalid quote - invalid side |
+|FRM15| FixedRateMarket: Invalid quote - invalid cashflow |
+|FRM16| FixedRateMarket: Invalid quote - Invalid APR |
+|FRM17| FixedRateMarket: Invalid quote - Invalid counterparty |
 |FRM18| FixedRateMarket: Invalid maturity |
-|FRM19| FixedRateMarket: Lender has insufficient allowance |
-|FRM20| FixedRateMarket: Lender has insufficient balance |
-|FRM21| FixedRateMarket: Borrower has insufficient collateral |
-|FRM22| FixedRateMarket: Amount exceeds QToken balance |
-|FRM23| FixedRateMarket: Account borrows exceeds balance |
-|FRM24| FixedRateMarket: Amount must be in excess of borrows |
+|FRM19| FixedRateMarket: Amount exceeds QToken balance |
+|FRM20| FixedRateMarket: Account borrows exceeds balance |
+|FRM21| FixedRateMarket: Amount must be in excess of borrows |
