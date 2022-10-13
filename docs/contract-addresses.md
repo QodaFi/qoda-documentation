@@ -20,7 +20,7 @@ sidebar_position: 9
 | QodaERC20 | [0x80E7CAeB210E92f842b52E7261eF4366Cda13bbd](https://moonbase.moonscan.io/address/0x80E7CAeB210E92f842b52E7261eF4366Cda13bbd) |
 | veQoda | [0xB36a650d8Ab919963d8d8Ee075bC73EeEB92F262](https://moonbase.moonscan.io/address/0xB36a650d8Ab919963d8d8Ee075bC73EeEB92F262) |
 | StakingEmissionsQontroller | [0xEC82d2F6F40dF81E649568Cf966BbC03b5D897b2](https://moonbase.moonscan.io/address/0xEC82d2F6F40dF81E649568Cf966BbC03b5D897b2) |
-| TradingEmissionsQontroller | [0xbD58407198Ef4D15Ca068143cb706591C6F61403](https://moonbase.moonscan.io/address/0xbD58407198Ef4D15Ca068143cb706591C6F61403) |
+| TradingEmissionsQontroller | [0x95D2572C6ff4379A79F2547132652B6C92B88467](https://moonbase.moonscan.io/address/0x95D2572C6ff4379A79F2547132652B6C92B88467) |
 | qDEVOCT22 | [0x7157BcFc76671f52f1C9F34A91178b961662bEc9](https://moonbase.moonscan.io/address/0x7157BcFc76671f52f1C9F34A91178b961662bEc9) |
 | qUSDCOCT22 | [0x0a99e2d5768564601BEde68C12e2e7E838136B9A](https://moonbase.moonscan.io/address/0x0a99e2d5768564601BEde68C12e2e7E838136B9A) |
 | qBTCOCT22 | [0x9789477A91ceC556207A0EF0058a8fd08a293133](https://moonbase.moonscan.io/address/0x9789477A91ceC556207A0EF0058a8fd08a293133) |
