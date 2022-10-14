@@ -14,13 +14,13 @@ slug: /
 
 The Qoda Protocol is a DeFi lending/borrowing protocol built on Moonbeam Network with several key features: 
 
-1. On-Chain Orderbook of Loans
+1. On-Chain Orderbook For Lending/Borrowing
 2. Isolated Collateral-Tier vs Market-Tier Assets
 3. Hybrid Overcollateralized/Undercollateralized Borrowing
 4. Fixed Interest Rate, Fixed Maturity Loans
 5. Repayment Ratio Redemption (RRR)
 
-Over the course of the whitepaper, we’ll go over each of these key features in closer detail. First, let’s take a survey of todays’ incumbent money market protocols (e.g., Compound, Aave, etc). Today’s money market protocols (Henceforth, Money Market v1.0 Protocols) have been one of the most promising sectors of DeFi with real product-market fit. However, Money Market V1.0 Protocols typically have several key deficiencies.
+Over the course of the whitepaper, we’ll go over each of these key features in closer detail. First, let’s take a survey of today’s incumbent money market protocols (e.g., Compound, Aave, etc). Current money market protocols (Henceforth, Money Market v1.0 Protocols) have been one of the most promising sectors of DeFi with real product-market fit. However, Money Market V1.0 Protocols typically have several key deficiencies.
 
 ## 1.1 The Global Collateral Problem
 
