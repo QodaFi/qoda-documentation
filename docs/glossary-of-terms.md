@@ -57,7 +57,7 @@ Generally, large, liquid, safer `Markets` have high `Market Factors`, while smal
 
 ## Maturity
 
-The `Maturity` time is the time after which a `Market` closes. No `Quotes` may be published or accepted after the `Maturity` time. This is also the time when borrowers need to repay their loans. By convention, the `Maturity` time is set to be the last business day of the month at 4:00 PM UTC.
+The `Maturity` time is the time after which a `Market` closes. No `Quotes` may be published or accepted after the `Maturity` time. This is also the time when borrowers need to repay their loans. By convention, the `Maturity` time is set to be the last weekday of the month at 4:00 PM UTC.
 
 ## mToken Wrapping / Unwrapping
 
@@ -85,7 +85,9 @@ Qoda adopts a hybrid overcollateralized/undercollateralized loan system. Because
 
 Qoda implements a `Repayment Redemption Ratio` (RRR) system. The repayment ratio, which is the real-time ratio of total amount that borrowers have repaid divided by the total amount that lenders are owed, is displayed transparently by the protocol at all times. In the event of a borrower default, losses are socialized among lenders to ensure fairness to all users.
 
-> *Example: The USDCSEP22 market has just expired. Lenders have lent 1,000,000 USDC in total, while borrowers have only repaid 600,000 USDC. The `Repayment Ratio` is 60%, so all lenders can redeem only 50% of their qUSDCSEP22 qTokens. If a lender has 100 qUSDCSEP22 qTokens, they will only be able to redeem for 60 USDC. The remaining 40 qUSDCSEP22 qTokens will still remain in their wallet. In the event that borrowers are later able to make payment, they will be able to redeem the remaining 40 qUSDCSEP22 for the underlying USDC.*
+Example:
+
+> *The USDCSEP22 market has just expired. Lenders have lent 1,000,000 USDC in total, while borrowers have only repaid 600,000 USDC. The `Repayment Ratio` is 60% (600,000 / 1,000,000), so all lenders can redeem only 60% of their qUSDCSEP22 qTokens. If a lender has 100 qUSDCSEP22 qTokens, they will only be able to redeem for 60 USDC. The remaining 40 qUSDCSEP22 qTokens will still remain in their wallet. In the event that borrowers are able to make payment at a later date, they will be able to redeem their remaining 40 qUSDCSEP22 tokens for the underlying USDC.*
 
 ## Virtual Borrow Value
 
