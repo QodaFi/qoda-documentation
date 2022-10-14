@@ -1,18 +1,43 @@
 ---
 sidebar_position: 1
 title: Introduction
+slug: /
 ---
 
 # Qoda Whitepaper
 
 ---
 
-## 1.0 Introduction
+<p style={{ color: "red" }}>*****NOTE: The documentation page is under constant development. Please check back frequently for updates.*****</p>
 
-The most popular collateralized lending/borrowing protocols today generally offer floating interest rates via pools which users can supply or borrow from. While these protocols create a lot of value for users looking to deploy their capital, there is increasingly more demand both from lenders and borrowers for more predictable, fixed interest rates. Furthermore, with fixed rate deals recorded on-chain across a variety of maturity dates, one can start to construct a new DeFi primitive, the crypto Yield Curve. As in traditional financial markets, the yield curve is the fundamental building block upon which more complex and customized fixed income products can be built.
+## 1.0 Intro To Qoda: Summary Of Features
 
-Shoehorning support for fixed interest rates using AMM-style liquidity pools has proven to be a difficult task so far. One reason is that it can be difficult to correctly model what price impact / slippage should look like for rates. Another is that with the sheer number of markets for a single token (e.g. Quarterly, monthly, weekly maturity dates) – it will quickly get very capital intensive for liquidity providers who need to put up massive sums of capital to keep such a large number of markets liquid. In tradfi, orderbooks or auction-based marketplaces avoided these issues because 1) the limit order system properly reflects the non-linear, time-dependent nature of real supply and demand and 2) capital doesn’t need to put up front when placing orders, only when trades are executed. Orderbooks are infeasible for fast-moving cryptocurrency markets due to transaction fees and minimum block times, but the marketplace model has shown to be effective for slower, more illiquid products such as NFTs (e.g. Opensea). Similarly, a marketplace model can be effective for a slower moving product such as fixed income.
+The Qoda Protocol is a DeFi lending/borrowing protocol built on Moonbeam Network with several key features: 
 
-Furthermore, while there are protocols that offer variable yield staking for tokens, and numerous protocols that offer loans denominated in stablecoin, there are perhaps no protocols today that offer fixed interest rate borrowing/lending of altcoins. This is important because the ability to borrow altcoins enables users to short the token (i.e. borrow and sell the token today for stablecoin, and buy back the token in the future at a lower rate). This type of market needs to be at fixed rates because a floating cost of borrow presents too much risk to traders, especially if there is a short squeeze. The option to short a security is vital to the overall health of the market, and there are perhaps no protocols available today that enable this function.
+1. On-Chain Orderbook of Loans
+2. Isolated Collateral-Tier vs Market-Tier Assets
+3. Hybrid Overcollateralized/Undercollateralized Borrowing
+4. Fixed Interest Rate, Fixed Maturity Loans
+5. Repayment Ratio Redemption (RRR)
 
-With these three issues in mind, we introduce the Qoda protocol, a collateralized lending/borrowing protocol differentiating itself with three features: fixed interest rates over fixed maturity dates, implementing a marketplace model instead of AMM, and a focus on altcoin-denominated loans. The long-term mission of the protocol is to grow the crypto interest rates market to become as popular and mature as the crypto currency markets are today by building a complete fixed income solution for the DeFi world.
+Over the course of the whitepaper, we’ll go over each of these key features in closer detail. First, let’s take a survey of todays’ incumbent money market protocols (e.g., Compound, Aave, etc). Today’s money market protocols (Henceforth, Money Market v1.0 Protocols) have been one of the most promising sectors of DeFi with real product-market fit. However, Money Market V1.0 Protocols typically have several key deficiencies.
+
+## 1.1 The Global Collateral Problem
+
+Money Market v1.0 Protocols have a global collateral system. This severely limits the number of markets the protocol can support. Any single asset that is supported poses a systemic risk to the entire system if it collapses. Hence, these protocols work excellently for blue-chip assets, but will never be able to support long-tail assets.
+
+## 1.2 The Price Discovery Problem
+
+Money Market v1.0 Protocols use a so-called static *Interest Rate Curve* that adjusts the floating interest rate based on the utilization ratio of borrowers to lenders in a particular market. However, the *Interest Rate Curve* itself is set a priori, and there are no guarantees that the curve has been configured appropriately to reflect real supply/demand and price discovery. 
+
+## 1.3 The Overcollateralization Problem
+
+Money Market v1.0 Protocols only support overcollateralized borrowing. This is a necessity in a trustless DeFi ecosystem. However, this type of system has very limited real-world use cases where demand for overcollateralized borrowing is generally correlated with bull markets. Specifically, users only borrow overcollaterlized for the purpose of facilitating leveraged trading. However, in sideways or bear markets, demand for overcollateralized borrowing dries up. In contrast, uncollateralized borrowing is equally in demand in both bull or bear markets because it suits a wider variety of business needs for the capital.
+
+## 1.4 Qoda Protocol Features
+
+To address the *Global Collateral Problem*, Qoda has the concept of two tiers of assets, `Collateral-Tier Assets` and `Market-Tier Assets`. Assets that are enabled for collateral are distinctly segregated from assets that are enabled for lending/borrowing markets. The list of assets enabled for collateral is highly restrictive. Typically only low-risk, high caliber assets (e.g. stablecoin, BTC, ETH, etc) are supported as collateral assets. Meanwhile, the list of assets for which a lending/borrowing market can be spun up can be much more permissively (perhaps in future iterations, even 100% permissionlessly).
+
+To address the *Price Discovery Problem*, Qoda implements an on-chain orderbook of fixed interest rate, fixed maturity borrow/lend orders. The current market rate for the `APR` on loans is determined by supply and demand of market participants themselves. This is the purest mechanism for price discovery of current interest rates.
+
+To address the *Overcollateralization Problem*, Qoda uses a hybrid under/over-collateralized borrowing model. Unpermissioned anonymous users must deposit collateral before they can borrow. However, Qoda also allows verified, credit assessed institutional borrowers to borrow with reduced or zero collateral. A side benefit of this is that uncollateralized borrowers can generally pay higher APRs, an attractive bonus for lenders seeking yield.
