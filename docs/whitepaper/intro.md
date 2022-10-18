@@ -17,7 +17,7 @@ The Qoda Protocol is a DeFi lending/borrowing protocol built on Moonbeam Network
 1. On-Chain Orderbook For Lending/Borrowing
 2. Isolated Collateral-Tier vs Market-Tier Assets
 3. Hybrid Overcollateralized/Undercollateralized Borrowing
-4. Fixed Interest Rate, Fixed Maturity Loans
+4. Fixed Interest Rate, Fixed Maturity Loans With Early Exit
 5. Repayment Redemption Ratio (RRR)
 
 Over the course of the whitepaper, we’ll go over each of these key features in closer detail. First, let’s take a survey of today’s incumbent money market protocols (e.g., Compound, Aave, etc). Current money market protocols (Henceforth, *Money Market v1.0 Protocols*) have been one of the most promising sectors of DeFi with real product-market fit. However, *Money Market V1.0 Protocols* typically have several key deficiencies.
@@ -38,6 +38,6 @@ Over the course of the whitepaper, we’ll go over each of these key features in
 
 To address the *Global Collateral Problem*, Qoda has the concept of two tiers of assets, `Collateral-Tier Assets` and `Market-Tier Assets`. Assets that are enabled for collateral are distinctly segregated from assets that are enabled for lending/borrowing markets. The list of assets enabled for collateral is highly restrictive. Typically only low-risk, high caliber assets (e.g. stablecoin, BTC, ETH, etc) are supported as collateral assets. Meanwhile, the list of assets for which a lending/borrowing market can be spun up can be much more permissively (perhaps in future iterations, even 100% permissionlessly).
 
-To address the *Price Discovery Problem*, Qoda implements an on-chain orderbook of fixed interest rate, fixed maturity borrow/lend orders. The current market rate for the `APR` on loans is determined by supply and demand of market participants themselves. This is the purest mechanism for price discovery of current interest rates.
+To address the *Price Discovery Problem*, Qoda implements an on-chain orderbook of fixed interest rate, fixed maturity borrow/lend orders. The current market rate for the `APR` on loans is determined by supply and demand of market participants themselves. This is the purest mechanism for price discovery of current interest rates. Moreover, Qoda's `qToken` feature allows lenders (and borrowers) the flexibility to exit early from their loans. Even though Qoda loans have fixed maturities, users are not locked in for the full period.
 
 To address the *Overcollateralization Problem*, Qoda uses a hybrid under/over-collateralized borrowing model. Unpermissioned anonymous users must deposit collateral before they can borrow. However, Qoda also allows verified, credit assessed institutional borrowers to borrow with reduced or zero collateral. A side benefit of this is that uncollateralized borrowers can generally pay higher APRs, an attractive bonus for lenders seeking yield.
