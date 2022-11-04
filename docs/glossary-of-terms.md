@@ -77,7 +77,7 @@ Note that a user may not have an outstanding debt and hold `qTokens` at the same
 
 ## Quote
 
-`Quotes` are Qoda's off-chain orders using digital signatures to either lend or borrow a particular token for a user-specified size, APR, and maturity date. You can think of `Quotes` as an analogue to limit orders in an orderbook. Users can either publish `Quotes` into the platform and wait for others to execute against it, or they can browse the list of existing `Quotes` and pick the terms that suit their needs.
+`Quotes` are Qoda's version of limit orders to either lend or borrow a particular token for a user-specified size, APR, and maturity date. You can think of `Quotes` as an analogue to limit orders in an orderbook. Users can either publish `Quotes` into the platform and wait for others to execute against it, or they can browse the list of existing `Quotes` and pick the terms that suit their needs.
 
 ## Repayment Redemption Ratio (RRR)
 
@@ -88,6 +88,25 @@ Qoda implements a `Repayment Redemption Ratio` (RRR) system. The repayment ratio
 Example:
 
 > *The USDCSEP22 market has just expired. Lenders have lent 1,000,000 USDC in total, while borrowers have only repaid 600,000 USDC. The `Repayment Ratio` is 60% (600,000 / 1,000,000), so all lenders can redeem only 60% of their qUSDCSEP22 qTokens. If a lender has 100 qUSDCSEP22 qTokens, they will only be able to redeem for 60 USDC. The remaining 40 qUSDCSEP22 qTokens will still remain in their wallet. In the event that borrowers are able to make payment at a later date, they will be able to redeem their remaining 40 qUSDCSEP22 tokens for the underlying USDC.*
+
+## Staking
+
+You may stake your QODA tokens anytime to begin earning [veQODA](/glossary-of-terms#veqoda). This will lock your QODA tokens inside the staking contract. You may also unstake your QODA tokens at any time to have them returned to your wallet. IMPORTANT: If you unstake your QODA tokens, **you will lose ALL your earned [veQODA](/glossary-of-terms#veqoda) tokens**.
+
+## veQODA
+
+veQODA are the reward tokens for staking in Qoda, inspired by the tokenomics at [Platypus Finance](https://medium.com/platypus-finance/platypus-liquidity-mining-design-eli5-part-i-52fd6b8bed1d). The primary motivation for veQODA is to incentivize long-term staking for users, but without explicitly locking users into staking for a minimum period of time. veQODA tokens are special ERC20 tokens with the following properties:
+
+1. veQODA reward tokens will accrue in real-time at a rate of 0.00004 veQODA tokens per 1 QODA token staked per block
+2. There is a max cap of 100 total veQODA rewards total for each 1 QODA staked
+3. veQODA tokens are non-transferrable from your wallet
+4. If you unstake your QODA tokens, you wil lose ALL your earned veQODA tokens
+
+Note: Currently, you must manually claim your veQODA tokens when you stake your QODA. You may claim veQODA as often as you wish, up to a per-block basis. veQODA tokens confer the following benefits, proportional to the total supply of veQODA tokens:
+
+1. Right to claim issuance of new QODA tokens (QODA staking rewards)
+2. Right to claim protocol fees, denominated in GLMR (GLMR staking rewards)
+3. Governance/DAO voting rights
 
 ## Virtual Borrow Value
 
