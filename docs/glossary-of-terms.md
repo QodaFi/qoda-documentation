@@ -95,7 +95,7 @@ You may stake your QODA tokens anytime to begin earning [veQODA](/glossary-of-te
 
 ## veQODA
 
-veQODA are the reward tokens for staking in Qoda, inspired by the tokenomics at [Platypus Finance](https://medium.com/platypus-finance/platypus-liquidity-mining-design-eli5-part-i-52fd6b8bed1d). The primary motivation for veQODA is to incentivize long-term staking for users, but without explicitly locking users into staking for a minimum period of time. veQODA tokens are special ERC20 tokens with the following properties:
+veQODA are the unit of measurement for your staking activity in Qoda, inspired by the tokenomics at [Platypus Finance](https://medium.com/platypus-finance/platypus-liquidity-mining-design-eli5-part-i-52fd6b8bed1d). You can begin accruing veQODA by staking and locking your QODA tokens inside the staking contract. The primary motivation for veQODA is to incentivize long-term staking for users, but without explicitly locking users into staking for a minimum period of time. veQODA tokens are special ERC20 tokens with the following properties:
 
 1. veQODA reward tokens will accrue in real-time at a rate of 0.00004 veQODA tokens per 1 QODA token staked per block
 2. There is a max cap of 100 total veQODA rewards total for each 1 QODA staked
