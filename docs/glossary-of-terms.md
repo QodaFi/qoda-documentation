@@ -20,9 +20,9 @@ Example: Suppose the APR is 10%, and that the lender lends 100 USDC to the borro
 
 Learn more about [APR](https://en.wikipedia.org/wiki/Annual_percentage_rate).
 
-## Borrow Value
+## Borrow Value (Real Borrow Value)
 
-The `Borrow Value` is the aggregated value of all borrows across all `Markets` of an account in USD as determined by the latest Chainlink oracle price.
+The `Borrow Value`(or `Real Borrow Value`)  is the aggregated value of all borrows across all `Markets` of an account in USD as determined by the latest Chainlink oracle price.
 
 ## Collateral Factor
 
@@ -34,9 +34,17 @@ Generally, large, liquid, safer `Assets` have high `Collateral Factors`, while s
 
 The `Collateral Value` (or `Real Collateral Value`) is the aggregated value of all collateral an account has deposited in USD as determined by the latest Chainlink oracle price.
 
-## Lend Value
+## Credit Limit
 
-The `Lend Value` is the aggregated value of all lends across all `Markets` of an account in USD as determined by the latest Chainlink oracle price.
+As part of the `Credit Facility` for undercollateralized borrowing, some permissioned accounts may be granted a `Credit Limit`, generally in conjunction with a bespoke `Initial Account Health` and `Minimum Account Health` ratios. The `Credit Limit` specifies how much the account may borrow under this bespoke `Credit Facility` (in USD), subject to the individual `Market Factor`s of the assets which the account may want to borrow.
+
+## Initial Account Health
+
+The minimum `Account Health` required when initially taking out a new loan. The `Initial Account Health` provides a safety buffer above the `Minimum Account Health` so that an account cannot accidentally be immediately liquidated when taking out a loan.
+
+## Lend Value (Real Lend Value)
+
+The `Lend Value` (or `Real Lend Value`) is the aggregated value of all lends across all `Markets` of an account in USD as determined by the latest Chainlink oracle price.
 
 ## Market
 
@@ -58,6 +66,10 @@ Generally, large, liquid, safer `Markets` have high `Market Factors`, while smal
 ## Maturity
 
 The `Maturity` time is the time after which a `Market` closes. No `Quotes` may be published or accepted after the `Maturity` time. This is also the time when borrowers need to repay their loans. By convention, the `Maturity` time is set to be the last weekday of the month at 4:00 PM UTC.
+
+## Minimum Account Health
+
+Also known as the `Liquidation Ratio`. If your `Account Health` falls below the minimum the `Minimum Account Health`, your account is eligible to be liquidated.
 
 ## mToken Wrapping / Unwrapping
 

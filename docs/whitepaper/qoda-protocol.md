@@ -67,7 +67,7 @@ Note that a user may not have an outstanding debt and hold `qTokens` at the same
 
 ## 2.5 Collateral Management
 
-By default, borrowers must fund their account with collateral denominated in Qoda-enabled `Assets` (section 2.3) before they may take on a loan. An account in danger of undercollateralization is subject to liquidations as described in section 2.7. An important exception to this is undercollateralized borrowers granted a `Credit Limit Facility` (section 2.6). 
+By default, borrowers must fund their account with collateral denominated in Qoda-enabled `Assets` (section 2.3) before they may take on a loan. An account in danger of undercollateralization is subject to liquidations as described in section 2.7. An important exception to this is undercollateralized borrowers granted a `Credit  Facility` (section 2.6). 
 
 The overall `accountHealth` of an account depends on two components:
 
@@ -103,14 +103,14 @@ Finally, the `accountHealth` of an account is calculated as:
 </center>
 
 
-The account is considered properly collateralized as long as the `accountHealth` ratio remains above 1. By default, any account that falls below this ratio will be subject to liquidation. The exception to this are accounts that have been granted a `Credit Limit Facility`, where the minimum `accountHealth` ratio before the account can be liquidated is custom-defined by the facility (see section 2.6).
+The account is considered properly collateralized as long as the `accountHealth` ratio remains above 1. By default, any account that falls below this ratio will be subject to liquidation. The exception to this are accounts that have been granted a `Credit Facility`, where the minimum `accountHealth` ratio before the account can be liquidated is custom-defined by the facility (see section 2.6).
 
-## 2.6 Credit Limit Facility
+## 2.6 Credit Facility
 
-Qoda supports both overcollateralized and undercollateralized borrowers. By default, all borrowers must be overcollateralized. However, verified institutional borrowers can apply to be risk assessed and granted a `Credit Limit Facility` on a case-by-case basis to borrow undercollateralized. A `Credit Limit Facility` is a struct with the following components:
+Qoda supports both overcollateralized and undercollateralized borrowers. By default, all borrowers must be overcollateralized. However, verified institutional borrowers can apply to be risk assessed and granted a `Credit Facility` on a case-by-case basis to borrow undercollateralized. A `Credit Facility` is a struct with the following components:
 
 ```
-CreditLimitFacility {
+CreditFacility {
   uint initCollateralRatio; // The initial collateral ratio the account must maintain when   
                             // opening a new loan
   uint minCollateralRatio; // The minimum collateral ratio before the account is 
@@ -119,7 +119,7 @@ CreditLimitFacility {
 }
 ```
 
-Any `Credit Limit Facility` granted account may continue to take loans beyond the `creditLimit`. However, beyond that point it will be treated as a regular account subject to the default overcollateralization rules.
+Any `Credit Facility` granted account may continue to take loans beyond the `creditLimit`. However, beyond that point it will be treated as a regular account subject to the default overcollateralization rules.
 
 ## 2.7 Liquidations
 
@@ -135,7 +135,7 @@ After the `maturityGracePeriod` has passed, lenders may redeem their `qTokens` f
 
 ## 2.9 Repayment Redemption Ratio (RRR)
 
-Since Qoda has both overcollateralized and undercollateralized borrowers via the `Credit Limit Facility`, there is a conceivable risk that borrowers default and there are not enough tokens to repay all lenders. 
+Since Qoda has both overcollateralized and undercollateralized borrowers via the `Credit Facility`, there is a conceivable risk that borrowers default and there are not enough tokens to repay all lenders. 
 
 How will redemptions for lenders work in the case of bad debt? In traditional finance, this situation typically triggers a bank run, where lenders all try to redeem at the same time. The first few lucky lenders to redeem can receive 100% of funds, while the late redeemers receive 0%.
 
