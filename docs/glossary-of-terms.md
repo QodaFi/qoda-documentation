@@ -26,7 +26,7 @@ The `Borrow Value`(or `Real Borrow Value`)  is the aggregated value of all borro
 
 ## Collateral Factor
 
-The `Collateral Factor` is a number from 0-100% assigned to every `Asset` that represents a weighting of how much lesser the Qoda collateral system will value collateral posted in that `Asset` from its current market price due, to the perceived market risk of the collateral.
+The `Collateral Factor` is a number from 0-100% assigned to every `Asset` that represents a weighting of how much lesser the Qoda collateral system will mark the value of collateral posted in that `Asset` from its current market price due, to the perceived market risk of the collateral.
 
 Generally, large, liquid, safer `Assets` have high `Collateral Factors`, while small, illiquid, riskier `Assets` have low `Collateral Factors`. If an Asset has a 0% `Collateral Factor`, it can’t be used as collateral, though it can still be lent or borrowed in Qoda `Markets`.
 
@@ -59,7 +59,7 @@ Important to note: When a borrower repays their loan, they are repaying to the `
 
 ## Market Factor
 
-The `Market Factor` is a number from 0-100% assigned to every `Market` that represents a weighting of how much more the Qoda collateral system will value the amount a user has borrowed in that `Market` from its current market price, due to the perceived market risk of the underlying token.
+The `Market Factor` is a number from 0-100% assigned to every `Market` that represents a weighting of how much higher the Qoda collateral system will mark the value of the amount a user has borrowed in that `Market` from its current market price, due to the perceived market risk of the underlying token.
 
 Generally, large, liquid, safer `Markets` have high `Market Factors`, while small, illiquid, risker `Markets` have low `Market Factors`.
 
@@ -107,9 +107,21 @@ The `Risk-Adjusted Borrow Value` is the `Market Factor-`adjusted aggregated valu
 
 Note that the `Risk-Adjusted Borrow Value` is always greater than or equal to the `Real Borrow Value`.
 
+Mathematically:
+
+```
+Risk-Adjusted Borrow Value = Borrow Value / Market Factor
+```
+
 ## Risk-Adjusted Collateral Value
 
 The `Risk-Adjusted Collateral Value` is the `Collateral Factor-`adjusted aggregated value in USD (as determined by the current Chainlink oracle price) of all collateral an account has deposited, where each collateral `Asset` is adjusted by its corresponding `Collateral Factor`. Note that the `Risk-Adjusted Collateral Value` is always less than or equal to the `Real Collateral Value`.
+
+Mathematically:
+
+```
+Risk-Adjusted Collateral Value = Collateral Value * Collateral Factor
+```
 
 ## Staking
 
