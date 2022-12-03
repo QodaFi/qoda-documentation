@@ -36,7 +36,7 @@ The `Collateral Value` (or `Real Collateral Value`) is the aggregated value of a
 
 ## Credit Limit
 
-As part of the `Credit Facility` for undercollateralized borrowing, some permissioned accounts may be granted a `Credit Limit`, generally in conjunction with a bespoke `Initial Account Health` and `Minimum Account Health` ratios. The `Credit Limit` specifies how much the account may borrow under this bespoke `Credit Facility` (in USD), subject to the individual `Market Factor`s of the assets which the account may want to borrow.
+As part of the `Credit Facility` for undercollateralized borrowing, some permissioned accounts may be granted a risk-adjusted `Credit Limit`, generally in conjunction with a bespoke `Initial Account Health` and `Minimum Account Health` ratios. The `Credit Limit` specifies how much the account may borrow under this bespoke `Credit Facility` (in USD), risk-adjusted by the individual `Market Factor`s of the assets which the account may want to borrow.
 
 ## Initial Account Health
 
@@ -101,6 +101,16 @@ Example:
 
 > *The USDCSEP22 market has just expired. Lenders have lent 1,000,000 USDC in total, while borrowers have only repaid 600,000 USDC. The `Repayment Ratio` is 60% (600,000 / 1,000,000), so all lenders can redeem only 60% of their qUSDCSEP22 qTokens. If a lender has 100 qUSDCSEP22 qTokens, they will only be able to redeem for 60 USDC. The remaining 40 qUSDCSEP22 qTokens will still remain in their wallet. In the event that borrowers are able to make payment at a later date, they will be able to redeem their remaining 40 qUSDCSEP22 tokens for the underlying USDC.*
 
+## Risk-Adjusted Borrow Value
+
+The `Risk-Adjusted Borrow Value` is the `Market Factor-`adjusted aggregated value in USD (as determined by the current Chainlink oracle price) of all net borrows (i.e. borrows minus lends) across all markets, where each borrowed `Market` is adjusted by its corresponding `Market Factor`. Important to note is that for any particular `Market`, a net positive lend position does not reduce the aggregate `Risk-Adjusted Borrow Value` - that is, lending in a `Market` is not equivalent to depositing collateral. Lending in a `Market` cannot substitute as collateral, it can only net against a positive borrow position in that particular `Market`.
+
+Note that the `Risk-Adjusted Borrow Value` is always greater than or equal to the `Real Borrow Value`.
+
+## Risk-Adjusted Collateral Value
+
+The `Risk-Adjusted Collateral Value` is the `Collateral Factor-`adjusted aggregated value in USD (as determined by the current Chainlink oracle price) of all collateral an account has deposited, where each collateral `Asset` is adjusted by its corresponding `Collateral Factor`. Note that the `Risk-Adjusted Collateral Value` is always less than or equal to the `Real Collateral Value`.
+
 ## Staking
 
 You may stake your QODA tokens anytime to begin earning [veQODA](/glossary-of-terms#veqoda). This will lock your QODA tokens inside the staking contract. You may also unstake your QODA tokens at any time to have them returned to your wallet. IMPORTANT: If you unstake your QODA tokens, **you will lose ALL your earned [veQODA](/glossary-of-terms#veqoda) tokens**.
@@ -119,13 +129,3 @@ Note: Currently, you must manually claim your veQODA tokens when you stake your 
 1. Right to claim issuance of new QODA tokens (QODA staking rewards)
 2. Right to claim protocol fees, denominated in GLMR (GLMR staking rewards)
 3. Governance/DAO voting rights
-
-## Virtual Borrow Value
-
-The `Virtual Borrow Value` is the `Market Factor-`adjusted aggregated value in USD (as determined by the current Chainlink oracle price) of all net borrows (i.e. borrows minus lends) across all markets, where each borrowed `Market` is adjusted by its corresponding `Market Factor`. Important to note is that for any particular `Market`, a net positive lend position does not reduce the aggregate `Virtual Borrow Value` - that is, lending in a `Market` is not equivalent to depositing collateral. Lending in a `Market` cannot substitute as collateral, it can only net against a positive borrow position in that particular `Market`.
-
-Note that the `Virtual Borrow Value` is always greater than or equal to the `Real Borrow Value`.
-
-## Virtual Collateral Value
-
-The `Virtual Collateral Value` is the `Collateral Factor-`adjusted aggregated value in USD (as determined by the current Chainlink oracle price) of all collateral an account has deposited, where each collateral `Asset` is adjusted by its corresponding `Collateral Factor`. Note that the `Virtual Collateral Value` is always less than or equal to the `Real Collateral Value`.

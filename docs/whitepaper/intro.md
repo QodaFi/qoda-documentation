@@ -28,7 +28,7 @@ Over the course of the whitepaper, we’ll go over each of these key features in
 
 ## 1.2 The Price Discovery Problem
 
-*Money Market v1.0 Protocols* use a so-called static *Interest Rate Curve* that adjusts the floating interest rate based on the utilization ratio of borrowers to lenders in a particular market. However, the *Interest Rate Curve* itself is set a priori, and there are no guarantees that the curve has been configured appropriately to reflect real supply/demand and price discovery. 
+*Money Market v1.0 Protocols* use a so-called static *Interest Rate Curve* that deterministically adjusts the floating interest rate based on the utilization ratio of borrowers to lenders in a particular market. However, the *Interest Rate Curve* itself is set a priori, and there are no guarantees that the curve has been configured appropriately to reflect real supply/demand and price discovery. 
 
 ## 1.3 The Overcollateralization Problem
 
