@@ -43,7 +43,7 @@ If you need to unstake the whole amount of QODA tokens or just some of them, ent
     <p><i>Unstaking QODA tokens</i></p>
 </center>
 
-    WARNING: When you unstake any amount, your entire veQODA balance will be reset to zero. Further rewards will depend on the amount of accumulated veQODA tokens from scratch. 
+WARNING: When you unstake any amount, your entire veQODA balance will be reset to zero. Further rewards will depend on the amount of accumulated veQODA tokens from scratch. 
 
 To claim veQODA tokens or receive staking rewards, you just need to click on the appropriate window “Claim Your veQODA” or “Claim Rewards” buttons. 
 
