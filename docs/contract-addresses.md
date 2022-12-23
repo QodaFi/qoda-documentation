@@ -12,21 +12,19 @@ sidebar_position: 8
 ## Moonbase Alpha Testnet
 | Contract | Address |
 |---|---|
-| QAdmin | [0xb575A3d12d95e72249acBfce0f90Abe28515D9F9](https://moonbase.moonscan.io/address/0xb575A3d12d95e72249acBfce0f90Abe28515D9F9) |
-| QPriceOracle | [0x03bA0f53a74130896c46224794B0ab759eA3C2B7](https://moonbase.moonscan.io/address/0x03bA0f53a74130896c46224794B0ab759eA3C2B7) |
-| QollateralManager | [0x061f3395d196C18b9E4da72Ed58ab6949C92Ecc7](https://moonbase.moonscan.io/address/0x061f3395d196C18b9E4da72Ed58ab6949C92Ecc7) |
-| QuotePublisher | [0x97CB311306c50d832E427877DA106544B5Bb53C1](https://moonbase.moonscan.io/address/0x97CB311306c50d832E427877DA106544B5Bb53C1) |
-| QodaLens | [0x5e884ba6A39c88417BD65B5dCac17c9247561840](https://moonbase.moonscan.io/address/0x5e884ba6A39c88417BD65B5dCac17c9247561840) |
-| QodaERC20 | [0x80E7CAeB210E92f842b52E7261eF4366Cda13bbd](https://moonbase.moonscan.io/address/0x80E7CAeB210E92f842b52E7261eF4366Cda13bbd) |
-| veQoda | [0xB36a650d8Ab919963d8d8Ee075bC73EeEB92F262](https://moonbase.moonscan.io/address/0xB36a650d8Ab919963d8d8Ee075bC73EeEB92F262) |
-| StakingEmissionsQontroller | [0xc72f835557469Da87C5b26e2E4c8c2B5E9cAC4Ba](https://moonbase.moonscan.io/address/0xc72f835557469Da87C5b26e2E4c8c2B5E9cAC4Ba) |
-| TradingEmissionsQontroller | [0x7d41ef3275d326A2C20584CCe90BDd8DF81c41CA](https://moonbase.moonscan.io/address/0x7d41ef3275d326A2C20584CCe90BDd8DF81c41CA) |
-| qDEVOCT22 | [0x7157BcFc76671f52f1C9F34A91178b961662bEc9](https://moonbase.moonscan.io/address/0x7157BcFc76671f52f1C9F34A91178b961662bEc9) |
-| qUSDCOCT22 | [0x0a99e2d5768564601BEde68C12e2e7E838136B9A](https://moonbase.moonscan.io/address/0x0a99e2d5768564601BEde68C12e2e7E838136B9A) |
-| qBTCOCT22 | [0x9789477A91ceC556207A0EF0058a8fd08a293133](https://moonbase.moonscan.io/address/0x9789477A91ceC556207A0EF0058a8fd08a293133) |
-| qDEVNOV22 | [0x0596C9DF2c616D517207B9EDe59d2fC4066F5C94](https://moonbase.moonscan.io/address/0x0596C9DF2c616D517207B9EDe59d2fC4066F5C94) |
-| qUSDCNOV22 | [0x3D58A9Fd0f42DD5A5f5Fe01786465110CDcB51c0](https://moonbase.moonscan.io/address/0x3D58A9Fd0f42DD5A5f5Fe01786465110CDcB51c0) |
-| qBTCNOV22 | [0x74891621035D84FaAaf00f23F173208447F290B5](https://moonbase.moonscan.io/address/0x74891621035D84FaAaf00f23F173208447F290B5) |
+| QAdmin | [0xe40f12Df469753F08adC63a55eCeca82dfA9c33a](https://moonbase.moonscan.io/address/0xe40f12Df469753F08adC63a55eCeca82dfA9c33a) |
+| QPriceOracle | [0x07259dfd3590e39697f15ED4608568a0cE20F556](https://moonbase.moonscan.io/address/0x07259dfd3590e39697f15ED4608568a0cE20F556) |
+| QollateralManager | [0xb3FEb1f9D852e68923A8085cbE2AD1Abb568b531](https://moonbase.moonscan.io/address/0xb3FEb1f9D852e68923A8085cbE2AD1Abb568b531) |
+| QuotePublisher | [0xeD29e2e7f7cE6748FF511080347F33330074C3a0](https://moonbase.moonscan.io/address/0xeD29e2e7f7cE6748FF511080347F33330074C3a0) |
+| QodaLens | [0x7092200c2CD6735154916733F222641f04382e1f](https://moonbase.moonscan.io/address/0x7092200c2CD6735154916733F222641f04382e1f) |
+| QodaERC20 | [0x8Ba85F336a4271440dF8A04a3866a7A46722a40B](https://moonbase.moonscan.io/address/0x8Ba85F336a4271440dF8A04a3866a7A46722a40B) |
+| veQoda | [0x53038B93e355ce8f45B7Efa6Fe4f281a0CCA2Be1](https://moonbase.moonscan.io/address/0x53038B93e355ce8f45B7Efa6Fe4f281a0CCA2Be1) |
+| TokenVesting | [0xe596e98C8413D8531bf652835E9BaA6Fa9A8E111](https://moonbase.moonscan.io/address/0xe596e98C8413D8531bf652835E9BaA6Fa9A8E111) |
+| StakingEmissionsQontroller | [0x26A48e7EF11B570C0E13BA4fE9D962Acdd74671e](https://moonbase.moonscan.io/address/0x26A48e7EF11B570C0E13BA4fE9D962Acdd74671e) |
+| TradingEmissionsQontroller | [0xBf7DBDF9A8aB025a95c1752eFd7B15c44C6d095f](https://moonbase.moonscan.io/address/0xBf7DBDF9A8aB025a95c1752eFd7B15c44C6d095f) |
+| qDEVJAN23 | [0x5175E9dCf3F3d02034ae43ae01d5c69f00c92546](https://moonbase.moonscan.io/address/0x5175E9dCf3F3d02034ae43ae01d5c69f00c92546) |
+| qUSDCJAN23 | [0xe3272843348d84E3d7a5E427825e99e0Bd598019](https://moonbase.moonscan.io/address/0xe3272843348d84E3d7a5E427825e99e0Bd598019) |
+| qBTCJAN23 | [0xfbfb9E426511F451f9E808f329A82126243ff02f](https://moonbase.moonscan.io/address/0xfbfb9E426511F451f9E808f329A82126243ff02f) |
 
 ## Moonbase Alpha Testnet External Contracts
 | Contract | Address |
