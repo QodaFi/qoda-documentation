@@ -5,15 +5,6 @@ sidebar_position: 4
 # Error Codes
 | Error Code | Meaning|
 |---|---|
-|QP0| QuotePublisher: Signature mismatch |
-|QP1| QuotePublisher: Invalid cashflow size |
-|QP2| QuotePublisher: Invalid Quote Type |
-|QP3| QuotePublisher: Invalid side |
-|QP4| QuotePublisher: Invalid expiry time |
-|QP5| QuotePublisher: Quote size too small |
-|QP6| QuotePublisher: Not enough balance |
-|QP7| QuotePublisher: Not enough allowance |
-|QP8| QuotePublisher: Not enough collateral |
 |QPO0| QPriceOracle: Asset not supported |
 |QPO1| QPriceOracle: currentExchangeRate out of bounds |
 |QM0| QollateralManager: Only admin authorized |
@@ -30,13 +21,13 @@ sidebar_position: 4
 |FRM2| FixedRateMarket: Not enough allowance |
 |FRM3| FixedRateMarket: Not enough balance |
 |FRM4| FixedRateMarket: May not redeem early |
-|FRM5| FixedRateMarket: Target user is not eligible for liquidation |
+|FRM5| FixedRateMarket: Liquidatee is not eligible for liquidation |
 |FRM6| FixedRateMarket: Quote ID was not found |
-|FRM7| FixedRateMarket: Target user collateral balance is too low |
+|FRM7| FixedRateMarket: Liquidatee's collateral balance is too low to pay liquidator |
 |FRM8| FixedRateMarket: Lends must be greater than borrows |
-|FRM9| FixedRateMarket: Amount must be greater than protocol Fee |
+|FRM9| FixedRateMarket: PV Amount must cover at least protocol fee costs |
 |FRM10| FixedRateMarket: Invalid quote - Quote size too small |
-|FRM11| FixedRateMarket: Invalid quote - Crossed APR |
+|FRM11| FixedRateMarket: //Currently Unused |
 |FRM12| FixedRateMarket: User not authorized for this action |
 |FRM13| FixedRateMarket: Invalid quote - invalid quoteType |
 |FRM14| FixedRateMarket: Invalid quote - invalid side |
@@ -44,6 +35,8 @@ sidebar_position: 4
 |FRM16| FixedRateMarket: Invalid quote - Invalid APR |
 |FRM17| FixedRateMarket: Invalid quote - Invalid counterparty |
 |FRM18| FixedRateMarket: Invalid maturity |
-|FRM19| FixedRateMarket: Amount exceeds QToken balance |
-|FRM20| FixedRateMarket: Account borrows exceeds balance |
-|FRM21| FixedRateMarket: Amount must be in excess of borrows |
+|FRM19| FixedRateMarket: QToken amount exceeds balance |
+|FRM20| FixedRateMarket: Amount exceeds redeemable tokens |
+|FRM21| FixedRateMarket: Transferred qTokens plus current borrows exceeds qToken balance |
+|FRM22| FixedRateMarket: Borrower amount exceeds permitted max borrow |
+|FRM23| FixedRateMarket: Redeem amount must be greater than zero |
