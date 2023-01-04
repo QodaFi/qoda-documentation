@@ -14,9 +14,9 @@ The Annual Percentage Rate is the simple interest rate paid from the borrower to
 
 Example: Suppose the APR is 10%, and that the lender lends 100 USDC to the borrower. 
 
-- After 30 days, the lender will accrue 100 \` (10% \` 30 / 365) = 0.82 USDC of interest.
-- After 180 days, the lender will accrue 100 \` (10% \` 180 / 365) = 4.93 USDC of interest. 
-- After 365 days, the lender will accrue 100 \` (10% \` 365 / 365) = 10 USDC of interest.
+- After 30 days, the lender will accrue 100 * (10% * 30 / 365) = 0.82 USDC of interest.
+- After 180 days, the lender will accrue 100 * (10% * 180 / 365) = 4.93 USDC of interest. 
+- After 365 days, the lender will accrue 100 * (10% * 365 / 365) = 10 USDC of interest.
 
 Learn more about [APR](https://en.wikipedia.org/wiki/Annual_percentage_rate).
 
