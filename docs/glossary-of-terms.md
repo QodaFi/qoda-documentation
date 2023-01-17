@@ -77,6 +77,12 @@ Users must deposit collateral on Qoda before they can borrow. However, letting u
 
 NOTE: Using external contracts such as Moonwell includes smart contract risk that is outside of the control of the Qoda Protocol. Please make sure you understand all the risks associated with using Moonwell's money markets. Users can always opt out of wrapping their collateral in money markets if they do not wish to do so.
 
+## Protocol Fees
+
+Protocol fees are taken from both lenders and borrowers anytime a loan is executed. The `Protocol Fee` is quoted in APR terms and is prorated to the duration of the loan.
+
+Example: Alice loans Bob 100 USDC due in 3 months and the `Protocol Fee` is 1% APR. Then, the fee paid in net amount is 1% * (3 / 12) * 100 = 0.25 USDC, since the loan lasts for 3months.
+
 ## qToken
 
 Each `Market` has an associated `qToken`, which is minted to a user when they lend to the `Market`. `qTokens` represent the full principal plus interest amount that the user may redeem when the `Market` matures. For example: 
