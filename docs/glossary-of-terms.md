@@ -129,6 +129,12 @@ Mathematically:
 Risk-Adjusted Collateral Value = Collateral Value * Collateral Factor
 ```
 
+## Slippage
+
+Because Qoda implements an orderbook mechanism for loans, it is possible for users to experience slippage when placing quick orders if your order size is large enough. Your final all-in fixed interest rate is the weighted average of the `Quote`s you execute against.
+
+Example: You execute a quick order to borrow 50,000 USDC, and the top three live `Lend Quotes` in orderbook are 25,000 USDC at 10% APR, 15,000 USDC at 8% APR, and 10,000 USDC at 5% APR, your final APR would be the weighted average of these `Quote`s, which is 8.4% APR.
+
 ## Staking
 
 You may stake your QODA tokens anytime to begin earning [veQODA](/glossary-of-terms#veqoda). This will lock your QODA tokens inside the staking contract. You may also unstake your QODA tokens at any time to have them returned to your wallet. IMPORTANT: If you unstake your QODA tokens, **you will lose ALL your earned [veQODA](/glossary-of-terms#veqoda) tokens**.
