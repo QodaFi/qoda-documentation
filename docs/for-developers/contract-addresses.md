@@ -7,6 +7,15 @@ sidebar_position: 8
 ## Moonriver
 | Contract | Address |
 | -------- | ------- |
+| QAdmin | [0xE06cE5aF73c706Dd7387dF55edC3Db40EE072edE](https://moonriver.moonscan.io/address/0xE06cE5aF73c706Dd7387dF55edC3Db40EE072edE) |
+| QPriceOracle | [0xb91ab67701ba29dF86AB1b8a635b8868C44Dc334](https://moonriver.moonscan.io/address/0xb91ab67701ba29dF86AB1b8a635b8868C44Dc334) |
+| QollateralManager | [0x704dE195Fd620D3E25260ce19c6EeEe0e219941A](https://moonriver.moonscan.io/address/0x704dE195Fd620D3E25260ce19c6EeEe0e219941A) |
+| QodaLens | [0x9C27B8324e230e3592Eb9Babd38Ad142D0A0d153](https://moonriver.moonscan.io/address/0x9C27B8324e230e3592Eb9Babd38Ad142D0A0d153) |
+| QodaERC20 | [0x7C733AcdC87874c9B0D02e46f54Cd89173b4a460](https://moonriver.moonscan.io/address/0x7C733AcdC87874c9B0D02e46f54Cd89173b4a460) |
+| veQoda | [0xe6b627D8cB3d92a91224530836DD291FE560781D](https://moonriver.moonscan.io/address/0xe6b627D8cB3d92a91224530836DD291FE560781D) |
+| StakingEmissionsQontroller | [0x2925A3714f92B1b4F663BA6a2A7de8a41a2207D8](https://moonriver.moonscan.io/address/0x2925A3714f92B1b4F663BA6a2A7de8a41a2207D8) |
+| TradingEmissionsQontroller | [0x2b1DB6Cb44B4dbaE53b1Ff2eECe5960fA66d83f2](https://moonriver.moonscan.io/address/0x2b1DB6Cb44B4dbaE53b1Ff2eECe5960fA66d83f2) |
+
 
 
 ## Moonbase Alpha Testnet
