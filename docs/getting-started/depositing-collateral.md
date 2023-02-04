@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 # Depositing Collateral
 
-Before you are able to borrow on Qoda, you must first deposit collateral (if you are a lender, no deposit is required). To deposit collateral on Qoda, first navigate to the Collateral page:
+Before you are able to borrow on Qoda, you must first deposit collateral. To deposit collateral on Qoda, first navigate to the Collateral page:
 
 <center>
   <img src="/img/getting-started/depositing-collateral/1.png"></img>
@@ -20,6 +20,22 @@ Generally, large, liquid, safer Assets have high *Collateral Factors*, while sma
   <p><i>Deposited Collateral</i></p>
 </center>
 
+To deposit collateral, select the asset and enter the amount you wish to deposit. 
+
+Qoda has an additional feature of [mToken wrapping/unwrapping](/glossary-of-terms#mtoken-wrapping--unwrapping) which allows users to automatically earn additional interest on their deposited collateral via [Moonwell protocol](https://moonwell.fi). Note that using the *mToken wrapping/unwrapping* feature incurs some small but non-neglible smart contract risk since it depends on a protocol external to Qoda. Please use this feature at your own risk. You may choose to uncheck the *mToken wrapping* box to opt out of the feature.
+
+<center>
+  <img src="/img/getting-started/depositing-collateral/3.png"></img>
+  <p><i>mToken Wrapping</i></p>
+</center>
+
+To withdraw your collateral, click *Withdraw*, enter the desired amount and click *Withdraw* again. If you are withdrawing *mTokens*, you are given the option to automatically unwrap the *mTokens* back into the underlying token by checking the box.
+
+<center>
+  <img src="/img/getting-started/depositing-collateral/4.png"></img>
+  <p><i>Withdrawing Collateral</i></p>
+</center>
+
 Once you’ve successfully deposited collateral, you can see that the page refreshes with:
 
 1. the amount of tokens you have deposited
@@ -30,7 +46,7 @@ Once you’ve successfully deposited collateral, you can see that the page refre
 You can withdraw your collateral as long as it does not put your *Account Health* below 1.1, and you can also deposit more collateral anytime.
 
 <center>
-  <img src="/img/getting-started/depositing-collateral/3.png"></img>
+  <img src="/img/getting-started/depositing-collateral/5.png"></img>
   <p><i>Aggregated Collateral Info</i></p>
 </center>
 
