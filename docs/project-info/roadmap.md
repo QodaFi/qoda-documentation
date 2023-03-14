@@ -36,9 +36,14 @@ The Qoda roadmap is a checklist of protocol development and ecosystem building r
 
 
 # 2023 Q1
-* Qoda Protocol Launch on Moonriver 🛠️
-* Fair Launch, token distribution, liquidity incentive programs on Moonriver 🛠️
-* Qoda Public token sale on Moonbeam 🛠️
+* Qoda Protocol Launch on Moonriver ✅
+* Fair Launch and token distribution on Moonriver ✅
 
 # 2023 Q2
-* Qoda Protocol Launch on Moonbeam 🛠️
+* Support New Lending/Borrowing Markets for wider assets ( MOVR, Liquid Staking Derivatives, Stablecoins, etc) 🛠️
+* Liquidity Incentives and Trading Rewards Programs 🛠️
+* Cross-Chain Solutions 🛠️
+
+# 2023 Q3
+* Qoda Public Token Sale 🛠️
+* Qoda Protocol Launch on Mainnet 🛠️
