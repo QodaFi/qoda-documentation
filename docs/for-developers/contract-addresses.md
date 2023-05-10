@@ -4,6 +4,14 @@ sidebar_position: 8
 
 # Contract Addresses
 
+## Moonbeam
+| Contract | Address |
+| -------- | ------- |
+| QAdmin | [0x13022Fffc50258512Ddf001cCfdE7E4Bb5ce37e5](https://moonbeam.moonscan.io/address/0x13022Fffc50258512Ddf001cCfdE7E4Bb5ce37e5) |
+| QPriceOracle | [0xB4d8905b1A30B0F06d8B48031581bD0B708AEA2C](https://moonbeam.moonscan.io/address/0xB4d8905b1A30B0F06d8B48031581bD0B708AEA2C) |
+| QollateralManager | [0x324523E7675e6869fd4E8859D9912EEaaa337769](https://moonbeam.moonscan.io/address/0x324523E7675e6869fd4E8859D9912EEaaa337769) |
+| QodaLens | [0x9de89DB17Ba2590aafa85FA96875c068FF36f064](https://moonbeam.moonscan.io/address/0x9de89DB17Ba2590aafa85FA96875c068FF36f064) |
+
 ## Moonriver
 | Contract | Address |
 | -------- | ------- |
