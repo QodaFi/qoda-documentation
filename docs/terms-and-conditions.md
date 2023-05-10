@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+sidebar_label: Terms and Conditions
+description: The Terms and Conditions for the Qoda Finance application, content, services and products.
 ---
 
 # Terms and Conditions for Qoda Finance
