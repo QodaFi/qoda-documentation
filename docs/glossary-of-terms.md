@@ -153,3 +153,7 @@ Note: Currently, you must manually claim your veQODA tokens when you stake your 
 1. Right to claim issuance of new QODA tokens (QODA staking rewards)
 2. Right to claim protocol fees, denominated in GLMR (GLMR staking rewards)
 3. Governance/DAO voting rights
+
+## Wrapped Native Tokens
+
+Wrapped native Tokens are ERC20 tokens that represents the native token of the network (e.g., ETH, GLMR, MOVR etc) at a 1:1 ratio, allowing the native token to interact with smart contracts and decentralized applications on the network that require ERC20 compliant tokens. This "wrapping" is accomplished by depositing native token into a smart contract, which in return mints an equivalent amount of wrapped native token. This process is reversible, meaning wrapped native tokens can be "unwrapped" back into native tokens. Under the hood, Qoda uses the ERC20 standard for all lending and borrowing actions, including for native tokens, to provide a standardized interface.
