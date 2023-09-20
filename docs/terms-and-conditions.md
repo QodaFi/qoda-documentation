@@ -10,7 +10,7 @@ description: The Terms and Conditions for the Qoda Finance application, content,
 
 Welcome to [Qoda Finance](https://qoda.fi), a decentralized finance (DeFi) lending and borrowing application ("Service"). Our Service provides an orderbook-style exchange that facilitates lending and borrowing of digital assets through smart contracts deployed on various blockchain networks. It allows users to interact with these smart contracts by publishing and accepting quotes to lend or borrow digital assets.
 
-The Service is provided by Qoda Labs Ltd. ("Company" or “we” or “us” or “our”). The following terms and conditions ("Terms") govern all use of our Service and all content, services, and products available at or through our Service. Please note that we are a software platform and do not participate in any lending or borrowing activities. We do not guarantee any profits, and using our Service involves risk, including the risk of losing all funds deposited into the smart contracts.
+The Service is provided by Qoda Finance Inc. ("Company" or “we” or “us” or “our”). The following terms and conditions ("Terms") govern all use of our Service and all content, services, and products available at or through our Service. Please note that we are a software platform and do not participate in any lending or borrowing activities. We do not guarantee any profits, and using our Service involves risk, including the risk of losing all funds deposited into the smart contracts.
 
 ### 2. Acceptance of Terms
 
