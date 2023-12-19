@@ -41,13 +41,19 @@ The Qoda roadmap is a checklist of protocol development and ecosystem building r
 
 # 2023 Q2
 * Support New Lending/Borrowing Markets for wider assets (MOVR, FRAX, DOT, etc.) ✅
-* Liquidity Incentives and Trading Rewards Programs 🛠️
-* Cross-Chain Solutions 🛠️
+* Launch on Moonbeam ✅
 
 # 2023 Q3
-* Launch on 3rd network 🛠️
-* Support for new altcoin assets 🛠️
+* Security Audit ✅
+* Liquidity Incentives and Trading Rewards Programs ✅
+* Launch on Arbitrum One ✅
 
 # 2023 Q4
-* Qoda’s DAO launch 🛠️
-* QODA token launch 🛠️
+* New Loans Page Development ✅
+* Threebalance Development Initiation  ✅
+* Tokenomics Design 🛠️
+
+# 2024 Q1
+* QODA Token Sale 🛠️
+* Qoda DAO Launch 🛠️
+* Staking and Incentive Program for Token Holders 🛠️
