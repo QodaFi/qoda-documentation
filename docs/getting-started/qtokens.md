@@ -12,10 +12,10 @@ Each *Market* has an associated *qToken*, which is minted to a user when they le
 
 The advantage of *qTokens* is that they allow for greater capital allocation efficiency. Without them, the user would have to wait for the return of their funds and interest. However, *qTokens* help track the value of the future cash flow. More importantly, they are also the mechanism that allows users to *Exit Early* from their loans.
 
-To see the qTokens associated with specific market, click on the *+Add to Metamask* button on the right.
+To see the qTokens associated with a specific market, click on the *+Add to Metamask* button on the right.
 
 <center>
-  <img src="/img/getting-started/qtokens/1.png"></img>
+  <img src="/img/getting-started/qtokens/qtokens1.png"></img>
   <p><i>Add qToken to Metamask</i></p>
 </center>
 
