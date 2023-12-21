@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Redemptions
 
-The [Portfolio](https://moonriver.qoda.fi/portfolio) page is where users may go to redeem their lends for the full principal plus interest amount.
+The [Portfolio](https://one.arbitrum.qoda.fi/portfolio) page is where users may go to redeem their lends for the full principal plus interest amount.
 
 <center>
   <img src="/img/getting-started/redemptions/1.png"></img>
