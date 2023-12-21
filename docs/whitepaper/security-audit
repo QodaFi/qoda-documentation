@@ -1,0 +1,15 @@
+---
+sidebar_position: 5
+title: Security Audit
+slug: /
+---
+
+# Security Audit
+
+---
+
+## Smart contracts Audit by Halborn Security
+
+Qoda's loan market and collateral management smart contracts were audited by Halborn in July 2023. All discovered security issues were fixed immediately during the audit process.
+
+[Check Full Audit Report](/docs/halborn-smart-contract-audit-report.pdf)
