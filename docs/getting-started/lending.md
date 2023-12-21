@@ -54,4 +54,4 @@ Create a Quote — you may specify your desired interest rate, notional, or repa
 
 Once you’ve filled in all the terms, hit “Publish Quote”. Once you've executed the transaction, your *Quote* is now live! *Quotes* that belong to you are marked with “Me” text in blue in the main *Marketplace* Page. You can also cancel your *Quotes* anytime, even before they are filled or expire (though you will have to pay some small gas fees to do so).
 
-After you have published the *Quote*, may also inspect it anytime in your [Portfolio](https://moonriver.qoda.fi/portfolio) page.
+After you have published the *Quote*, may also inspect it anytime on your [Portfolio](https://one.arbitrum.qoda.fi/portfolio) page.
